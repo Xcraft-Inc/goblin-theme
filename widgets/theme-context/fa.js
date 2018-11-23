@@ -219,6 +219,7 @@ import t30 from '@fortawesome/fontawesome-pro-solid/faTrain';
 import t35 from '@fortawesome/fontawesome-pro-regular/faTrash';
 import t40 from '@fortawesome/fontawesome-pro-solid/faTrash';
 import t41 from '@fortawesome/fontawesome-pro-solid/faTrashAlt';
+import t42 from '@fortawesome/fontawesome-pro-regular/faTrashAlt';
 import t45 from '@fortawesome/fontawesome-pro-solid/faTree';
 import t50 from '@fortawesome/fontawesome-pro-solid/faTriangle';
 import t55 from '@fortawesome/fontawesome-pro-solid/faTrophy';
@@ -423,6 +424,7 @@ function boot() {
     t35,
     t40,
     t41,
+    t42,
     t45,
     t50,
     t55,
