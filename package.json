@@ -1,0 +1,20 @@
+{
+  "name": "goblin-theme",
+  "version": "0.0.1",
+  "description": "Goblin theme",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "MIT",
+  "config": {
+    "xcraft": {
+      "commands": false
+    }
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "xcraft-dev-rules": "^0.3.0",
+    "prettier": "1.15.1"
+  }
+}
