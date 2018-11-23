@@ -21,8 +21,9 @@ import a60 from '@fortawesome/fontawesome-pro-solid/faAsterisk';
 import a70 from '@fortawesome/fontawesome-pro-solid/faAt';
 
 /* B */
-import b00 from '@fortawesome/fontawesome-pro-solid/faBadge';
-import b01 from '@fortawesome/fontawesome-pro-solid/faBadgeCheck';
+import b00 from '@fortawesome/fontawesome-pro-solid/faBackward';
+import b01 from '@fortawesome/fontawesome-pro-solid/faBadge';
+import b02 from '@fortawesome/fontawesome-pro-solid/faBadgeCheck';
 import b05 from '@fortawesome/fontawesome-pro-solid/faBan';
 import b10 from '@fortawesome/fontawesome-pro-solid/faBars';
 import b20 from '@fortawesome/fontawesome-pro-solid/faBalanceScale';
@@ -32,6 +33,7 @@ import b35 from '@fortawesome/fontawesome-pro-regular/faBell';
 import b40 from '@fortawesome/fontawesome-pro-solid/faBicycle';
 import b45 from '@fortawesome/fontawesome-pro-solid/faBinoculars';
 import b46 from '@fortawesome/fontawesome-pro-solid/faBolt';
+import b47 from '@fortawesome/fontawesome-pro-solid/faBook';
 import b48 from '@fortawesome/fontawesome-pro-regular/faBookmark';
 import b49 from '@fortawesome/fontawesome-pro-solid/faBookmark';
 import b50 from '@fortawesome/fontawesome-pro-solid/faBuilding';
@@ -91,7 +93,8 @@ import c181 from '@fortawesome/fontawesome-pro-light/faCubes';
 
 /* D */
 import d00 from '@fortawesome/fontawesome-pro-solid/faDatabase';
-import d01 from '@fortawesome/fontawesome-pro-regular/faDotCircle';
+import d10 from '@fortawesome/fontawesome-pro-solid/faDesktop';
+import d20 from '@fortawesome/fontawesome-pro-regular/faDotCircle';
 
 /* E */
 import e00 from '@fortawesome/fontawesome-pro-light/faEdit';
@@ -115,7 +118,8 @@ import f05 from '@fortawesome/fontawesome-pro-solid/faFax';
 import f10 from '@fortawesome/fontawesome-pro-solid/faFemale';
 import f20 from '@fortawesome/fontawesome-pro-solid/faFileAlt';
 import f30 from '@fortawesome/fontawesome-pro-solid/faFlask';
-import f40 from '@fortawesome/fontawesome-pro-solid/faFrown';
+import f40 from '@fortawesome/fontawesome-pro-solid/faForward';
+import f50 from '@fortawesome/fontawesome-pro-solid/faFrown';
 
 /* G */
 import g00 from '@fortawesome/fontawesome-pro-solid/faGem';
@@ -258,6 +262,7 @@ function boot() {
     a70,
     b00,
     b01,
+    b02,
     b05,
     b10,
     b20,
@@ -267,6 +272,7 @@ function boot() {
     b40,
     b45,
     b46,
+    b47,
     b48,
     b49,
     b50,
@@ -322,7 +328,8 @@ function boot() {
     c180,
     c181,
     d00,
-    d01,
+    d10,
+    d20,
     e00,
     e01,
     e03,
@@ -343,6 +350,7 @@ function boot() {
     f20,
     f30,
     f40,
+    f50,
     g00,
     g10,
     g20,
