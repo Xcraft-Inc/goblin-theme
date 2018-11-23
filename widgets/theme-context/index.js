@@ -65,8 +65,7 @@ function getGlobalStyles(theme) {
   return {
     body: {
       color: '#999',
-      fontFamily: ['Open Sans', 'Helvetica', 'Arial', 'sans-serif'],
-      fontWeight: 300,
+      fontFamily: theme.typo.font,
       margin: 0,
       padding: 0,
       userSelect: 'none',
