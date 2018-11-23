@@ -1,52 +1,52 @@
 import Fa from './fa.js';
 
-import OpenSansRegularWoff from './fonts/open-sans-v15-latin-regular.woff';
-import OpenSansRegularWoff2 from './fonts/open-sans-v15-latin-regular.woff2';
-import OpenSansItalicWoff from './fonts/open-sans-v15-latin-italic.woff';
-import OpenSansItalicWoff2 from './fonts/open-sans-v15-latin-italic.woff2';
-import OpenSans700Woff from './fonts/open-sans-v15-latin-700.woff';
-import OpenSans700Woff2 from './fonts/open-sans-v15-latin-700.woff2';
-import OpenSans700ItalicWoff from './fonts/open-sans-v15-latin-700italic.woff';
-import OpenSans700ItalicWoff2 from './fonts/open-sans-v15-latin-700italic.woff2';
+import LatoRegularWoff from './fonts/lato-v14-latin-regular.woff';
+import LatoRegularWoff2 from './fonts/lato-v14-latin-regular.woff2';
+import LatoItalicWoff from './fonts/lato-v14-latin-italic.woff';
+import LatoItalicWoff2 from './fonts/lato-v14-latin-italic.woff2';
+import Lato700Woff from './fonts/lato-v14-latin-700.woff';
+import Lato700Woff2 from './fonts/lato-v14-latin-700.woff2';
+import Lato700ItalicWoff from './fonts/lato-v14-latin-700italic.woff';
+import Lato700ItalicWoff2 from './fonts/lato-v14-latin-700italic.woff2';
 
 Fa();
 
 function getFonts(theme) {
   return `
     @font-face {
-      font-family: 'Open Sans';
+      font-family: 'Lato';
       font-style: normal;
       font-weight: 400;
       src:
-        url('${OpenSansRegularWoff2}') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
-        url('${OpenSansRegularWoff}') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+        url('${LatoRegularWoff2}') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+        url('${LatoRegularWoff}') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
     }
 
     @font-face {
-      font-family: 'Open Sans';
+      font-family: 'Lato';
       font-style: italic;
       font-weight: 400;
       src:
-        url('${OpenSansItalicWoff2}') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
-        url('${OpenSansItalicWoff}') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+        url('${LatoItalicWoff2}') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+        url('${LatoItalicWoff}') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
     }
 
     @font-face {
-      font-family: 'Open Sans';
+      font-family: 'Lato';
       font-style: normal;
       font-weight: 700;
       src:
-        url('${OpenSans700Woff2}') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
-        url('${OpenSans700Woff}') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+        url('${Lato700Woff2}') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+        url('${Lato700Woff}') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
     }
 
     @font-face {
-      font-family: 'Open Sans';
+      font-family: 'Lato';
       font-style: italic;
       font-weight: 700;
       src:
-        url('${OpenSans700ItalicWoff2}') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
-        url('${OpenSans700ItalicWoff}') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+        url('${Lato700ItalicWoff2}') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+        url('${Lato700ItalicWoff}') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
     }
   `;
 }
