@@ -63,7 +63,7 @@ function getGlobalStyles(theme) {
   const tooltipColorText = `${theme.palette.tooltipText} !important`;
 
   return {
-    body: {
+    '.root': {
       color: '#999',
       fontFamily: theme.typo.font,
       margin: 0,
