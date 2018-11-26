@@ -71,6 +71,7 @@ function getGlobalStyles(theme) {
       userSelect: 'none',
     },
 
+    /* Begin markdown section */
     pre: {
       display: 'block',
       margin: 0,
@@ -137,6 +138,7 @@ function getGlobalStyles(theme) {
       margin: 0,
       paddingLeft: theme.shapes.markdownListPadding,
     },
+    /* End markdown section */
 
     '::WebkitScrollbar': {
       width: theme.shapes.scrollerThickness,
