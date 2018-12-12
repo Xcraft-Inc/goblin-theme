@@ -178,6 +178,7 @@ import p16 from '@fortawesome/fontawesome-pro-regular/faPlusCircle';
 import p20 from '@fortawesome/fontawesome-pro-solid/faPlusSquare';
 import p21 from '@fortawesome/fontawesome-pro-regular/faPlusSquare';
 import p30 from '@fortawesome/fontawesome-pro-solid/faPoo';
+import p40 from '@fortawesome/fontawesome-pro-solid/faPrint';
 
 /* Q */
 import q00 from '@fortawesome/fontawesome-pro-solid/faQuestionCircle';
@@ -189,7 +190,8 @@ import r20 from '@fortawesome/fontawesome-pro-solid/faRocket';
 import r21 from '@fortawesome/fontawesome-pro-light/faRocket';
 
 /* S */
-import s00 from '@fortawesome/fontawesome-pro-solid/faSearch';
+import s00 from '@fortawesome/fontawesome-pro-light/faSave';
+import s01 from '@fortawesome/fontawesome-pro-solid/faSearch';
 import s05 from '@fortawesome/fontawesome-pro-solid/faShareAlt';
 import s07 from '@fortawesome/fontawesome-pro-solid/faShoppingBasket';
 import s08 from '@fortawesome/fontawesome-pro-solid/faShoppingCart';
@@ -395,12 +397,14 @@ function boot() {
     p20,
     p21,
     p30,
+    p40,
     q00,
     r00,
     r10,
     r20,
     r21,
     s00,
+    s01,
     s05,
     s07,
     s08,
