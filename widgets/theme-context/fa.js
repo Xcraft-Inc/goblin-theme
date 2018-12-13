@@ -135,7 +135,7 @@ import h10 from '@fortawesome/fontawesome-pro-solid/faHeart';
 import h20 from '@fortawesome/fontawesome-pro-solid/faHexagon';
 import h25 from '@fortawesome/fontawesome-pro-solid/faHome';
 import h30 from '@fortawesome/fontawesome-pro-regular/faHospital';
-import h31 from '@fortawesome/fontawesome-pro-regular/faHourglassStart';
+import h31 from '@fortawesome/fontawesome-pro-solid/faHourglassStart';
 
 /* I */
 import i00 from '@fortawesome/fontawesome-pro-solid/faInbox';
@@ -190,7 +190,7 @@ import r20 from '@fortawesome/fontawesome-pro-solid/faRocket';
 import r21 from '@fortawesome/fontawesome-pro-light/faRocket';
 
 /* S */
-import s00 from '@fortawesome/fontawesome-pro-light/faSave';
+import s00 from '@fortawesome/fontawesome-pro-solid/faSave';
 import s01 from '@fortawesome/fontawesome-pro-solid/faSearch';
 import s05 from '@fortawesome/fontawesome-pro-solid/faShareAlt';
 import s07 from '@fortawesome/fontawesome-pro-solid/faShoppingBasket';
