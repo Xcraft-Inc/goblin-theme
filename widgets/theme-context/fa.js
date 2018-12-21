@@ -148,6 +148,8 @@ import l10 from '@fortawesome/fontawesome-pro-solid/faLink';
 import l15 from '@fortawesome/fontawesome-pro-solid/faList';
 import l20 from '@fortawesome/fontawesome-pro-solid/faLock';
 import l21 from '@fortawesome/fontawesome-pro-regular/faLock';
+import l22 from '@fortawesome/fontawesome-pro-solid/faLockOpen';
+import l23 from '@fortawesome/fontawesome-pro-regular/faLockOpen';
 
 /* M */
 import m00 from '@fortawesome/fontawesome-pro-solid/faMale';
@@ -373,6 +375,8 @@ function boot() {
     l15,
     l20,
     l21,
+    l22,
+    l23,
     m00,
     m10,
     m11,
