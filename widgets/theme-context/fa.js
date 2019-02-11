@@ -246,6 +246,9 @@ import u32 from '@fortawesome/fontawesome-pro-solid/faUsers';
 import u40 from '@fortawesome/fontawesome-pro-solid/faUserSecret';
 import u41 from '@fortawesome/fontawesome-pro-regular/faUtensils';
 
+/* V */
+import v00 from '@fortawesome/fontawesome-pro-solid/faVial';
+
 function boot() {
   fontawesome.library.add(
     a00,
@@ -456,7 +459,8 @@ function boot() {
     u31,
     u32,
     u40,
-    u41
+    u41,
+    v00
   );
 }
 
