@@ -118,7 +118,8 @@ import f05 from '@fortawesome/fontawesome-pro-solid/faFax';
 import f10 from '@fortawesome/fontawesome-pro-solid/faFemale';
 import f20 from '@fortawesome/fontawesome-pro-solid/faFileAlt';
 import f21 from '@fortawesome/fontawesome-pro-solid/faFilter';
-import f30 from '@fortawesome/fontawesome-pro-solid/faFlask';
+import f30 from '@fortawesome/fontawesome-pro-solid/faFlag';
+import f31 from '@fortawesome/fontawesome-pro-solid/faFlask';
 import f40 from '@fortawesome/fontawesome-pro-solid/faForward';
 import f50 from '@fortawesome/fontawesome-pro-solid/faFrown';
 
@@ -358,6 +359,7 @@ function boot() {
     f20,
     f21,
     f30,
+    f31,
     f40,
     f50,
     g00,
