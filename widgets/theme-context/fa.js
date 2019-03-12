@@ -197,6 +197,8 @@ import r21 from '@fortawesome/fontawesome-pro-light/faRocket';
 /* S */
 import s00 from '@fortawesome/fontawesome-pro-solid/faSave';
 import s01 from '@fortawesome/fontawesome-pro-solid/faSearch';
+import s02 from '@fortawesome/fontawesome-pro-solid/faSearchMinus';
+import s03 from '@fortawesome/fontawesome-pro-solid/faSearchPlus';
 import s05 from '@fortawesome/fontawesome-pro-solid/faShareAlt';
 import s07 from '@fortawesome/fontawesome-pro-solid/faShoppingBasket';
 import s08 from '@fortawesome/fontawesome-pro-solid/faShoppingCart';
@@ -421,6 +423,8 @@ function boot() {
     r21,
     s00,
     s01,
+    s02,
+    s03,
     s05,
     s07,
     s08,
