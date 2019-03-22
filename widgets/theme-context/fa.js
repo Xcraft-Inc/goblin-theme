@@ -225,6 +225,7 @@ import s97 from '@fortawesome/fontawesome-pro-light/faSync';
 import t00 from '@fortawesome/fontawesome-pro-solid/faTag';
 import t01 from '@fortawesome/fontawesome-pro-solid/faTaxi';
 import t02 from '@fortawesome/fontawesome-pro-solid/faTh';
+import t03 from '@fortawesome/fontawesome-pro-solid/faThLarge';
 import t05 from '@fortawesome/fontawesome-pro-solid/faTimes';
 import t10 from '@fortawesome/fontawesome-pro-solid/faTimesCircle';
 import t11 from '@fortawesome/fontawesome-pro-regular/faTimesSquare';
@@ -449,6 +450,7 @@ function boot() {
     t00,
     t01,
     t02,
+    t03,
     t05,
     t10,
     t11,
