@@ -104,6 +104,7 @@ import e03 from '@fortawesome/fontawesome-pro-solid/faEllipsisV';
 import e05 from '@fortawesome/fontawesome-pro-regular/faEnvelope';
 import e10 from '@fortawesome/fontawesome-pro-solid/faEnvelope';
 import e20 from '@fortawesome/fontawesome-pro-solid/faEraser';
+import e22 from '@fortawesome/fontawesome-pro-solid/faExchange';
 import e25 from '@fortawesome/fontawesome-pro-solid/faExclamationCircle';
 import e30 from '@fortawesome/fontawesome-pro-solid/faExclamationTriangle';
 import e35 from '@fortawesome/fontawesome-pro-solid/faExpand';
@@ -354,6 +355,7 @@ function boot() {
     e05,
     e10,
     e20,
+    e22,
     e25,
     e30,
     e35,
