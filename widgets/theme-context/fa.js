@@ -105,6 +105,7 @@ import e03 from '@fortawesome/fontawesome-pro-solid/faEllipsisV';
 import e05 from '@fortawesome/fontawesome-pro-regular/faEnvelope';
 import e10 from '@fortawesome/fontawesome-pro-solid/faEnvelope';
 import e20 from '@fortawesome/fontawesome-pro-solid/faEraser';
+import e22 from '@fortawesome/fontawesome-pro-solid/faExchange';
 import e25 from '@fortawesome/fontawesome-pro-solid/faExclamationCircle';
 import e30 from '@fortawesome/fontawesome-pro-solid/faExclamationTriangle';
 import e35 from '@fortawesome/fontawesome-pro-solid/faExpand';
@@ -200,6 +201,7 @@ import s00 from '@fortawesome/fontawesome-pro-solid/faSave';
 import s01 from '@fortawesome/fontawesome-pro-solid/faSearch';
 import s02 from '@fortawesome/fontawesome-pro-solid/faSearchMinus';
 import s03 from '@fortawesome/fontawesome-pro-solid/faSearchPlus';
+import s04 from '@fortawesome/fontawesome-pro-light/faSearchPlus';
 import s05 from '@fortawesome/fontawesome-pro-solid/faShareAlt';
 import s07 from '@fortawesome/fontawesome-pro-solid/faShoppingBasket';
 import s08 from '@fortawesome/fontawesome-pro-solid/faShoppingCart';
@@ -355,6 +357,7 @@ function boot() {
     e05,
     e10,
     e20,
+    e22,
     e25,
     e30,
     e35,
@@ -428,6 +431,7 @@ function boot() {
     s01,
     s02,
     s03,
+    s04,
     s05,
     s07,
     s08,

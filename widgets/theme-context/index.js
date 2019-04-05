@@ -71,6 +71,10 @@ function getGlobalStyles(theme) {
       userSelect: 'none',
     },
 
+    input: {
+      fontFamily: theme.typo.font,
+    },
+
     /* Begin markdown section */
     pre: {
       display: 'block',
