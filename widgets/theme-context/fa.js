@@ -99,8 +99,9 @@ import d10 from '@fortawesome/fontawesome-pro-solid/faDesktop';
 import d20 from '@fortawesome/fontawesome-pro-regular/faDotCircle';
 
 /* E */
-import e00 from '@fortawesome/fontawesome-pro-light/faEdit';
-import e01 from '@fortawesome/fontawesome-pro-solid/faEllipsisH';
+import e00 from '@fortawesome/fontawesome-pro-solid/faEdit';
+import e01 from '@fortawesome/fontawesome-pro-light/faEdit';
+import e02 from '@fortawesome/fontawesome-pro-solid/faEllipsisH';
 import e03 from '@fortawesome/fontawesome-pro-solid/faEllipsisV';
 import e05 from '@fortawesome/fontawesome-pro-regular/faEnvelope';
 import e10 from '@fortawesome/fontawesome-pro-solid/faEnvelope';
@@ -158,8 +159,9 @@ import l23 from '@fortawesome/fontawesome-pro-regular/faLockOpen';
 
 /* M */
 import m00 from '@fortawesome/fontawesome-pro-solid/faMale';
-import m10 from '@fortawesome/fontawesome-pro-solid/faMapMarkerAlt';
-import m11 from '@fortawesome/fontawesome-pro-regular/faMapMarkerAlt';
+import m10 from '@fortawesome/fontawesome-pro-solid/faMap';
+import m11 from '@fortawesome/fontawesome-pro-solid/faMapMarkerAlt';
+import m12 from '@fortawesome/fontawesome-pro-regular/faMapMarkerAlt';
 import m20 from '@fortawesome/fontawesome-pro-solid/faMeh';
 import m30 from '@fortawesome/fontawesome-pro-solid/faMinus';
 import m35 from '@fortawesome/fontawesome-pro-solid/faMinusCircle';
@@ -353,6 +355,7 @@ function boot() {
     d20,
     e00,
     e01,
+    e02,
     e03,
     e05,
     e10,
@@ -400,6 +403,7 @@ function boot() {
     m00,
     m10,
     m11,
+    m12,
     m20,
     m30,
     m35,
