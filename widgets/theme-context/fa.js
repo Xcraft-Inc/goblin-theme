@@ -82,8 +82,9 @@ import c130 from '@fortawesome/fontawesome-pro-regular/faClone';
 import c140 from '@fortawesome/fontawesome-pro-solid/faClone';
 import c141 from '@fortawesome/fontawesome-pro-solid/faCloud';
 import c142 from '@fortawesome/fontawesome-pro-light/faCloud';
-import c150 from '@fortawesome/fontawesome-pro-solid/faCog';
-import c151 from '@fortawesome/fontawesome-pro-solid/faCoins';
+import c150 from '@fortawesome/fontawesome-pro-solid/faCodeBranch';
+import c151 from '@fortawesome/fontawesome-pro-solid/faCog';
+import c152 from '@fortawesome/fontawesome-pro-solid/faCoins';
 import c160 from '@fortawesome/fontawesome-pro-solid/faColumns';
 import c170 from '@fortawesome/fontawesome-pro-regular/faComment';
 import c175 from '@fortawesome/fontawesome-pro-solid/faComment';
@@ -342,6 +343,7 @@ function boot() {
     c142,
     c150,
     c151,
+    c152,
     c160,
     c170,
     c175,
