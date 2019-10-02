@@ -6,7 +6,9 @@ import fontawesome from '@fortawesome/fontawesome';
 /* B */
 
 /* C */
-import c020 from '@fortawesome/fontawesome-pro-solid/faCaretDown';
+import c020 from '@fortawesome/fontawesome-pro-regular/faCalendarAlt';
+import c021 from '@fortawesome/fontawesome-pro-regular/faCalendarTimes';
+import c022 from '@fortawesome/fontawesome-pro-solid/faCaretDown';
 import c025 from '@fortawesome/fontawesome-pro-solid/faCaretUp';
 import c030 from '@fortawesome/fontawesome-pro-solid/faCartPlus';
 import c060 from '@fortawesome/fontawesome-pro-solid/faCheck';
@@ -90,6 +92,8 @@ import u10 from '@fortawesome/fontawesome-pro-solid/faUpload';
 function boot() {
   fontawesome.library.add(
     c020,
+    c021,
+    c022,
     c025,
     c030,
     c060,
