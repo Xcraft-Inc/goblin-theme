@@ -4,6 +4,7 @@ import fontawesome from '@fortawesome/fontawesome';
 /* A */
 
 /* B */
+import b10 from '@fortawesome/fontawesome-pro-solid/faBug';
 
 /* C */
 import c020 from '@fortawesome/fontawesome-pro-regular/faCalendar';
@@ -92,6 +93,7 @@ import u10 from '@fortawesome/fontawesome-pro-solid/faUpload';
 
 function boot() {
   fontawesome.library.add(
+    b10,
     c020,
     c021,
     c022,
