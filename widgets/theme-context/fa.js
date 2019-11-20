@@ -87,7 +87,8 @@ import t41 from '@fortawesome/fontawesome-pro-solid/faTrashAlt';
 import t42 from '@fortawesome/fontawesome-pro-regular/faTrashAlt';
 
 /* U */
-import u10 from '@fortawesome/fontawesome-pro-solid/faUpload';
+import u10 from '@fortawesome/fontawesome-pro-solid/faUndo';
+import u20 from '@fortawesome/fontawesome-pro-solid/faUpload';
 
 /* V */
 
@@ -144,7 +145,8 @@ function boot() {
     t40,
     t41,
     t42,
-    u10
+    u10,
+    u20
   );
 }
 
