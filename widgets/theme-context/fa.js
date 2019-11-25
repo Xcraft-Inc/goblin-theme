@@ -42,6 +42,7 @@ import e20 from '@fortawesome/fontawesome-pro-solid/faEraser';
 import h25 from '@fortawesome/fontawesome-pro-solid/faHome';
 
 /* I */
+import i00 from '@fortawesome/fontawesome-pro-solid/faIndustry';
 
 /* L */
 import l00 from '@fortawesome/fontawesome-pro-solid/faLanguage';
@@ -118,6 +119,7 @@ function boot() {
     e03,
     e20,
     h25,
+    i00,
     l00,
     m30,
     m35,
