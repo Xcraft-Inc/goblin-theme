@@ -23,6 +23,7 @@ import c101 from '@fortawesome/fontawesome-pro-solid/faChevronUp';
 import c102 from '@fortawesome/fontawesome-pro-solid/faChevronDown';
 import c110 from '@fortawesome/fontawesome-pro-regular/faCircle';
 import c115 from '@fortawesome/fontawesome-pro-solid/faCircle';
+import c120 from '@fortawesome/fontawesome-pro-solid/faColumns';
 
 /* D */
 import d20 from '@fortawesome/fontawesome-pro-regular/faDotCircle';
@@ -112,6 +113,7 @@ function boot() {
     c102,
     c110,
     c115,
+    c120,
     d20,
     e00,
     e01,
