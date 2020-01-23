@@ -37,6 +37,8 @@ import e20 from '@fortawesome/fontawesome-pro-solid/faEraser';
 import e30 from '@fortawesome/fontawesome-pro-solid/faExternalLink';
 
 /* F */
+import f10 from '@fortawesome/fontawesome-pro-solid/faFolder';
+import f11 from '@fortawesome/fontawesome-pro-solid/faFolderOpen';
 
 /* G */
 
@@ -122,6 +124,8 @@ function boot() {
     e03,
     e20,
     e30,
+    f10,
+    f11,
     h25,
     i00,
     l00,
