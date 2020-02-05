@@ -61,7 +61,8 @@ import m41 from '@fortawesome/fontawesome-pro-regular/faMinusSquare';
 /* O */
 
 /* P */
-import p10 from '@fortawesome/fontawesome-pro-solid/faPlus';
+import p10 from '@fortawesome/fontawesome-pro-solid/faPlay';
+import p12 from '@fortawesome/fontawesome-pro-solid/faPlus';
 import p15 from '@fortawesome/fontawesome-pro-solid/faPlusCircle';
 import p16 from '@fortawesome/fontawesome-pro-regular/faPlusCircle';
 import p20 from '@fortawesome/fontawesome-pro-solid/faPlusSquare';
@@ -135,6 +136,7 @@ function boot() {
     m40,
     m41,
     p10,
+    p12,
     p15,
     p16,
     p20,
