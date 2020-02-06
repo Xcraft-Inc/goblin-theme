@@ -80,6 +80,7 @@ import s04 from '@fortawesome/fontawesome-pro-light/faSearchPlus';
 import s30 from '@fortawesome/fontawesome-pro-solid/faSpinner';
 import s40 from '@fortawesome/fontawesome-pro-solid/faSquare';
 import s41 from '@fortawesome/fontawesome-pro-regular/faSquare';
+import s50 from '@fortawesome/fontawesome-pro-solid/faStop';
 
 /* T */
 import t05 from '@fortawesome/fontawesome-pro-solid/faTimes';
@@ -148,6 +149,7 @@ function boot() {
     s30,
     s40,
     s41,
+    s50,
     t05,
     t10,
     t11,
