@@ -4,7 +4,8 @@ import fontawesome from '@fortawesome/fontawesome';
 /* A */
 
 /* B */
-import b10 from '@fortawesome/fontawesome-pro-solid/faBug';
+import b10 from '@fortawesome/fontawesome-pro-solid/faBeer';
+import b20 from '@fortawesome/fontawesome-pro-solid/faBug';
 
 /* C */
 import c020 from '@fortawesome/fontawesome-pro-regular/faCalendar';
@@ -27,6 +28,7 @@ import c120 from '@fortawesome/fontawesome-pro-solid/faColumns';
 
 /* D */
 import d20 from '@fortawesome/fontawesome-pro-regular/faDotCircle';
+import d21 from '@fortawesome/fontawesome-pro-solid/faDownload';
 
 /* E */
 import e00 from '@fortawesome/fontawesome-pro-solid/faEdit';
@@ -102,6 +104,7 @@ import u20 from '@fortawesome/fontawesome-pro-solid/faUpload';
 function boot() {
   fontawesome.library.add(
     b10,
+    b20,
     c020,
     c021,
     c022,
@@ -120,6 +123,7 @@ function boot() {
     c115,
     c120,
     d20,
+    d21,
     e00,
     e01,
     e02,
