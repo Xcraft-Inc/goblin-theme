@@ -50,6 +50,9 @@ import h25 from '@fortawesome/fontawesome-pro-solid/faHome';
 /* I */
 import i00 from '@fortawesome/fontawesome-pro-solid/faIndustry';
 
+/* J */
+import j00 from '@fortawesome/fontawesome-pro-solid/faJackOLantern';
+
 /* L */
 import l00 from '@fortawesome/fontawesome-pro-solid/faLanguage';
 
@@ -136,6 +139,7 @@ function boot() {
     f11,
     h25,
     i00,
+    j00,
     l00,
     m30,
     m35,
