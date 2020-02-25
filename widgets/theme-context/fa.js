@@ -82,6 +82,7 @@ import s01 from '@fortawesome/fontawesome-pro-solid/faSearch';
 import s02 from '@fortawesome/fontawesome-pro-solid/faSearchMinus';
 import s03 from '@fortawesome/fontawesome-pro-solid/faSearchPlus';
 import s04 from '@fortawesome/fontawesome-pro-light/faSearchPlus';
+import s20 from '@fortawesome/fontawesome-pro-solid/faShower';
 import s30 from '@fortawesome/fontawesome-pro-solid/faSpinner';
 import s40 from '@fortawesome/fontawesome-pro-light/faSquare';
 import s41 from '@fortawesome/fontawesome-pro-regular/faSquare';
@@ -156,6 +157,7 @@ function boot() {
     s02,
     s03,
     s04,
+    s20,
     s30,
     s40,
     s41,
