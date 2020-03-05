@@ -55,6 +55,7 @@ import j00 from '@fortawesome/fontawesome-pro-solid/faJackOLantern';
 
 /* L */
 import l00 from '@fortawesome/fontawesome-pro-solid/faLanguage';
+import l05 from '@fortawesome/fontawesome-pro-solid/faLeaf';
 
 /* M */
 import m30 from '@fortawesome/fontawesome-pro-solid/faMinus';
@@ -142,6 +143,7 @@ function boot() {
     i00,
     j00,
     l00,
+    l05,
     m30,
     m35,
     m36,
