@@ -1,182 +1,182 @@
 // TODO: add support for free version (for the open-source version of westeros)
-import fontawesome from '@fortawesome/fontawesome';
+import {library} from '@fortawesome/fontawesome-svg-core';
 
 /* A */
 
 /* B */
-import b10 from '@fortawesome/fontawesome-pro-solid/faBeer';
-import b20 from '@fortawesome/fontawesome-pro-solid/faBug';
+import {faBeer as faBeerSolid} from '@fortawesome/pro-solid-svg-icons';
+import {faBug as faBugSolid} from '@fortawesome/pro-solid-svg-icons';
 
 /* C */
-import c020 from '@fortawesome/fontawesome-pro-regular/faCalendar';
-import c021 from '@fortawesome/fontawesome-pro-regular/faCalendarAlt';
-import c022 from '@fortawesome/fontawesome-pro-regular/faCalendarTimes';
-import c023 from '@fortawesome/fontawesome-pro-solid/faCaretDown';
-import c025 from '@fortawesome/fontawesome-pro-solid/faCaretUp';
-import c030 from '@fortawesome/fontawesome-pro-solid/faCartPlus';
-import c060 from '@fortawesome/fontawesome-pro-solid/faCheck';
-import c070 from '@fortawesome/fontawesome-pro-solid/faCheckCircle';
-import c080 from '@fortawesome/fontawesome-pro-regular/faCheckSquare';
-import c090 from '@fortawesome/fontawesome-pro-solid/faCheckSquare';
-import c099 from '@fortawesome/fontawesome-pro-solid/faChevronLeft';
-import c100 from '@fortawesome/fontawesome-pro-solid/faChevronRight';
-import c101 from '@fortawesome/fontawesome-pro-solid/faChevronUp';
-import c102 from '@fortawesome/fontawesome-pro-solid/faChevronDown';
-import c110 from '@fortawesome/fontawesome-pro-regular/faCircle';
-import c115 from '@fortawesome/fontawesome-pro-solid/faCircle';
-import c120 from '@fortawesome/fontawesome-pro-solid/faColumns';
+import {faCalendar as faCalendarRegular} from '@fortawesome/pro-regular-svg-icons';
+import {faCalendarAlt as faCalendarAltRegular} from '@fortawesome/pro-regular-svg-icons';
+import {faCalendarTimes as faCalendarTimesRegular} from '@fortawesome/pro-regular-svg-icons';
+import {faCaretDown as faCaretDownSolid} from '@fortawesome/pro-solid-svg-icons';
+import {faCaretUp as faCaretUpSolid} from '@fortawesome/pro-solid-svg-icons';
+import {faCartPlus as faCartPlusSolid} from '@fortawesome/pro-solid-svg-icons';
+import {faCheck as faCheckSolid} from '@fortawesome/pro-solid-svg-icons';
+import {faCheckCircle as faCheckCircleSolid} from '@fortawesome/pro-solid-svg-icons';
+import {faCheckSquare as faCheckSquareRegular} from '@fortawesome/pro-regular-svg-icons';
+import {faCheckSquare as faCheckSquareSolid} from '@fortawesome/pro-solid-svg-icons';
+import {faChevronLeft as faChevronLeftSolid} from '@fortawesome/pro-solid-svg-icons';
+import {faChevronRight as faChevronRightSolid} from '@fortawesome/pro-solid-svg-icons';
+import {faChevronUp as faChevronUpSolid} from '@fortawesome/pro-solid-svg-icons';
+import {faChevronDown as faChevronDownSolid} from '@fortawesome/pro-solid-svg-icons';
+import {faCircle as faCircleRegular} from '@fortawesome/pro-regular-svg-icons';
+import {faCircle as faCircleSolid} from '@fortawesome/pro-solid-svg-icons';
+import {faColumns as faColumnsSolid} from '@fortawesome/pro-solid-svg-icons';
 
 /* D */
-import d20 from '@fortawesome/fontawesome-pro-regular/faDotCircle';
-import d21 from '@fortawesome/fontawesome-pro-solid/faDownload';
+import {faDotCircle as faDotCircleRegular} from '@fortawesome/pro-regular-svg-icons';
+import {faDownload as faDownloadSolid} from '@fortawesome/pro-solid-svg-icons';
 
 /* E */
-import e00 from '@fortawesome/fontawesome-pro-solid/faEdit';
-import e01 from '@fortawesome/fontawesome-pro-light/faEdit';
-import e02 from '@fortawesome/fontawesome-pro-solid/faEllipsisH';
-import e03 from '@fortawesome/fontawesome-pro-solid/faEllipsisV';
-import e20 from '@fortawesome/fontawesome-pro-solid/faEraser';
-import e30 from '@fortawesome/fontawesome-pro-solid/faExternalLink';
+import {faEdit as faEditSolid} from '@fortawesome/pro-solid-svg-icons';
+import {faEdit as faEditLight} from '@fortawesome/pro-light-svg-icons';
+import {faEllipsisH as faEllipsisHSolid} from '@fortawesome/pro-solid-svg-icons';
+import {faEllipsisV as faEllipsisVSolid} from '@fortawesome/pro-solid-svg-icons';
+import {faEraser as faEraserSolid} from '@fortawesome/pro-solid-svg-icons';
+import {faExternalLink as faExternalLinkSolid} from '@fortawesome/pro-solid-svg-icons';
 
 /* F */
-import f10 from '@fortawesome/fontawesome-pro-solid/faFolder';
-import f11 from '@fortawesome/fontawesome-pro-solid/faFolderOpen';
+import {faFolder as faFolderSolid} from '@fortawesome/pro-solid-svg-icons';
+import {faFolderOpen as faFolderOpenSolid} from '@fortawesome/pro-solid-svg-icons';
 
 /* G */
 
 /* H */
-import h25 from '@fortawesome/fontawesome-pro-solid/faHome';
+import {faHome as faHomeSolid} from '@fortawesome/pro-solid-svg-icons';
 
 /* I */
-import i00 from '@fortawesome/fontawesome-pro-solid/faIndustry';
+import {faIndustry as faIndustrySolid} from '@fortawesome/pro-solid-svg-icons';
 
 /* J */
-import j00 from '@fortawesome/fontawesome-pro-solid/faJackOLantern';
+import {faJackOLantern as faJackOLanternSolid} from '@fortawesome/pro-solid-svg-icons';
 
 /* L */
-import l00 from '@fortawesome/fontawesome-pro-solid/faLanguage';
-import l05 from '@fortawesome/fontawesome-pro-solid/faLeaf';
+import {faLanguage as faLanguageSolid} from '@fortawesome/pro-solid-svg-icons';
+import {faLeaf as faLeafSolid} from '@fortawesome/pro-solid-svg-icons';
 
 /* M */
-import m30 from '@fortawesome/fontawesome-pro-solid/faMinus';
-import m35 from '@fortawesome/fontawesome-pro-solid/faMinusCircle';
-import m36 from '@fortawesome/fontawesome-pro-regular/faMinusCircle';
-import m40 from '@fortawesome/fontawesome-pro-solid/faMinusSquare';
-import m41 from '@fortawesome/fontawesome-pro-regular/faMinusSquare';
+import {faMinus as faMinusSolid} from '@fortawesome/pro-solid-svg-icons';
+import {faMinusCircle as faMinusCircleSolid} from '@fortawesome/pro-solid-svg-icons';
+import {faMinusCircle as faMinusCircleRegular} from '@fortawesome/pro-regular-svg-icons';
+import {faMinusSquare as faMinusSquareSolid} from '@fortawesome/pro-solid-svg-icons';
+import {faMinusSquare as faMinusSquareRegular} from '@fortawesome/pro-regular-svg-icons';
 
 /* O */
 
 /* P */
-import p10 from '@fortawesome/fontawesome-pro-solid/faPlay';
-import p12 from '@fortawesome/fontawesome-pro-solid/faPlus';
-import p15 from '@fortawesome/fontawesome-pro-solid/faPlusCircle';
-import p16 from '@fortawesome/fontawesome-pro-regular/faPlusCircle';
-import p20 from '@fortawesome/fontawesome-pro-solid/faPlusSquare';
-import p21 from '@fortawesome/fontawesome-pro-regular/faPlusSquare';
+import {faPlay as faPlaySolid} from '@fortawesome/pro-solid-svg-icons';
+import {faPlus as faPlusSolid} from '@fortawesome/pro-solid-svg-icons';
+import {faPlusCircle as faPlusCircleSolid} from '@fortawesome/pro-solid-svg-icons';
+import {faPlusCircle as faPlusCircleRegular} from '@fortawesome/pro-regular-svg-icons';
+import {faPlusSquare as faPlusSquareSolid} from '@fortawesome/pro-solid-svg-icons';
+import {faPlusSquare as faPlusSquareRegular} from '@fortawesome/pro-regular-svg-icons';
 
 /* Q */
 
 /* R */
 
 /* S */
-import s01 from '@fortawesome/fontawesome-pro-solid/faSearch';
-import s02 from '@fortawesome/fontawesome-pro-solid/faSearchMinus';
-import s03 from '@fortawesome/fontawesome-pro-solid/faSearchPlus';
-import s04 from '@fortawesome/fontawesome-pro-light/faSearchPlus';
-import s20 from '@fortawesome/fontawesome-pro-solid/faShower';
-import s30 from '@fortawesome/fontawesome-pro-solid/faSpinner';
-import s40 from '@fortawesome/fontawesome-pro-light/faSquare';
-import s41 from '@fortawesome/fontawesome-pro-regular/faSquare';
-import s42 from '@fortawesome/fontawesome-pro-solid/faSquare';
-import s50 from '@fortawesome/fontawesome-pro-solid/faStop';
+import {faSearch as faSearchSolid} from '@fortawesome/pro-solid-svg-icons';
+import {faSearchMinus as faSearchMinusSolid} from '@fortawesome/pro-solid-svg-icons';
+import {faSearchPlus as faSearchPlusSolid} from '@fortawesome/pro-solid-svg-icons';
+import {faSearchPlus as faSearchPlusLight} from '@fortawesome/pro-light-svg-icons';
+import {faShower as faShowerSolid} from '@fortawesome/pro-solid-svg-icons';
+import {faSpinner as faSpinnerSolid} from '@fortawesome/pro-solid-svg-icons';
+import {faSquare as faSquareLight} from '@fortawesome/pro-light-svg-icons';
+import {faSquare as faSquareRegular} from '@fortawesome/pro-regular-svg-icons';
+import {faSquare as faSquareSolid} from '@fortawesome/pro-solid-svg-icons';
+import {faStop as faStopSolid} from '@fortawesome/pro-solid-svg-icons';
 
 /* T */
-import t05 from '@fortawesome/fontawesome-pro-solid/faTimes';
-import t10 from '@fortawesome/fontawesome-pro-solid/faTimesCircle';
-import t11 from '@fortawesome/fontawesome-pro-solid/faTimesSquare';
-import t12 from '@fortawesome/fontawesome-pro-regular/faTimesSquare';
-import t20 from '@fortawesome/fontawesome-pro-light/faToggleOff';
-import t25 from '@fortawesome/fontawesome-pro-light/faToggleOn';
-import t35 from '@fortawesome/fontawesome-pro-regular/faTrash';
-import t40 from '@fortawesome/fontawesome-pro-solid/faTrash';
-import t41 from '@fortawesome/fontawesome-pro-solid/faTrashAlt';
-import t42 from '@fortawesome/fontawesome-pro-regular/faTrashAlt';
+import {faTimes as faTimesSolid} from '@fortawesome/pro-solid-svg-icons';
+import {faTimesCircle as faTimesCircleSolid} from '@fortawesome/pro-solid-svg-icons';
+import {faTimesSquare as faTimesSquareSolid} from '@fortawesome/pro-solid-svg-icons';
+import {faTimesSquare as faTimesSquareRegular} from '@fortawesome/pro-regular-svg-icons';
+import {faToggleOff as faToggleOffLight} from '@fortawesome/pro-light-svg-icons';
+import {faToggleOn as faToggleOnLight} from '@fortawesome/pro-light-svg-icons';
+import {faTrash as faTrashRegular} from '@fortawesome/pro-regular-svg-icons';
+import {faTrash as faTrashSolid} from '@fortawesome/pro-solid-svg-icons';
+import {faTrashAlt as faTrashAltSolid} from '@fortawesome/pro-solid-svg-icons';
+import {faTrashAlt as faTrashAltRegular} from '@fortawesome/pro-regular-svg-icons';
 
 /* U */
-import u10 from '@fortawesome/fontawesome-pro-solid/faUndo';
-import u20 from '@fortawesome/fontawesome-pro-solid/faUpload';
+import {faUndo as faUndoSolid} from '@fortawesome/pro-solid-svg-icons';
+import {faUpload as faUploadSolid} from '@fortawesome/pro-solid-svg-icons';
 
 /* V */
 
 function boot() {
-  fontawesome.library.add(
-    b10,
-    b20,
-    c020,
-    c021,
-    c022,
-    c023,
-    c025,
-    c030,
-    c060,
-    c070,
-    c080,
-    c090,
-    c099,
-    c100,
-    c101,
-    c102,
-    c110,
-    c115,
-    c120,
-    d20,
-    d21,
-    e00,
-    e01,
-    e02,
-    e03,
-    e20,
-    e30,
-    f10,
-    f11,
-    h25,
-    i00,
-    j00,
-    l00,
-    l05,
-    m30,
-    m35,
-    m36,
-    m40,
-    m41,
-    p10,
-    p12,
-    p15,
-    p16,
-    p20,
-    p21,
-    s01,
-    s02,
-    s03,
-    s04,
-    s20,
-    s30,
-    s40,
-    s41,
-    s42,
-    s50,
-    t05,
-    t10,
-    t11,
-    t12,
-    t20,
-    t25,
-    t35,
-    t40,
-    t41,
-    t42,
-    u10,
-    u20
+  library.add(
+    faBeerSolid,
+    faBugSolid,
+    faCalendarRegular,
+    faCalendarAltRegular,
+    faCalendarTimesRegular,
+    faCaretDownSolid,
+    faCaretUpSolid,
+    faCartPlusSolid,
+    faCheckSolid,
+    faCheckCircleSolid,
+    faCheckSquareRegular,
+    faCheckSquareSolid,
+    faChevronLeftSolid,
+    faChevronRightSolid,
+    faChevronUpSolid,
+    faChevronDownSolid,
+    faCircleRegular,
+    faCircleSolid,
+    faColumnsSolid,
+    faDotCircleRegular,
+    faDownloadSolid,
+    faEditSolid,
+    faEditLight,
+    faEllipsisHSolid,
+    faEllipsisVSolid,
+    faEraserSolid,
+    faExternalLinkSolid,
+    faFolderSolid,
+    faFolderOpenSolid,
+    faHomeSolid,
+    faIndustrySolid,
+    faJackOLanternSolid,
+    faLanguageSolid,
+    faLeafSolid,
+    faMinusSolid,
+    faMinusCircleSolid,
+    faMinusCircleRegular,
+    faMinusSquareSolid,
+    faMinusSquareRegular,
+    faPlaySolid,
+    faPlusSolid,
+    faPlusCircleSolid,
+    faPlusCircleRegular,
+    faPlusSquareSolid,
+    faPlusSquareRegular,
+    faSearchSolid,
+    faSearchMinusSolid,
+    faSearchPlusSolid,
+    faSearchPlusLight,
+    faShowerSolid,
+    faSpinnerSolid,
+    faSquareLight,
+    faSquareRegular,
+    faSquareSolid,
+    faStopSolid,
+    faTimesSolid,
+    faTimesCircleSolid,
+    faTimesSquareSolid,
+    faTimesSquareRegular,
+    faToggleOffLight,
+    faToggleOnLight,
+    faTrashRegular,
+    faTrashSolid,
+    faTrashAltSolid,
+    faTrashAltRegular,
+    faUndoSolid,
+    faUploadSolid
   );
 }
 
