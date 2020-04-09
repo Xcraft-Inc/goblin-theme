@@ -32,7 +32,7 @@ function getGlobalStyles(theme) {
       userSelect: 'none',
     },
 
-    input: {
+    'input': {
       fontFamily: theme.typo.font,
     },
   };
