@@ -25,6 +25,7 @@ import {faChevronDown as faChevronDownSolid} from '@fortawesome/pro-solid-svg-ic
 import {faCircle as faCircleRegular} from '@fortawesome/pro-regular-svg-icons';
 import {faCircle as faCircleSolid} from '@fortawesome/pro-solid-svg-icons';
 import {faColumns as faColumnsSolid} from '@fortawesome/pro-solid-svg-icons';
+import {faCrown as faCrownSolid} from '@fortawesome/pro-solid-svg-icons';
 
 /* D */
 import {faDotCircle as faDotCircleRegular} from '@fortawesome/pro-regular-svg-icons';
@@ -91,6 +92,7 @@ import {faSquare as faSquareSolid} from '@fortawesome/pro-solid-svg-icons';
 import {faStop as faStopSolid} from '@fortawesome/pro-solid-svg-icons';
 
 /* T */
+import {faTachometer as faTachometerSolid} from '@fortawesome/pro-solid-svg-icons';
 import {faTimes as faTimesSolid} from '@fortawesome/pro-solid-svg-icons';
 import {faTimesCircle as faTimesCircleSolid} from '@fortawesome/pro-solid-svg-icons';
 import {faTimesSquare as faTimesSquareSolid} from '@fortawesome/pro-solid-svg-icons';
@@ -129,6 +131,7 @@ function boot() {
     faCircleRegular,
     faCircleSolid,
     faColumnsSolid,
+    faCrownSolid,
     faDotCircleRegular,
     faDownloadSolid,
     faEditSolid,
@@ -165,6 +168,7 @@ function boot() {
     faSquareRegular,
     faSquareSolid,
     faStopSolid,
+    faTachometerSolid,
     faTimesSolid,
     faTimesCircleSolid,
     faTimesSquareSolid,
