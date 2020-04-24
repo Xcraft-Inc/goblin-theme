@@ -21,7 +21,9 @@ import {faCheckSquare as faCheckSquareSolid} from '@fortawesome/pro-solid-svg-ic
 import {faChevronLeft as faChevronLeftSolid} from '@fortawesome/pro-solid-svg-icons/faChevronLeft';
 import {faChevronRight as faChevronRightSolid} from '@fortawesome/pro-solid-svg-icons/faChevronRight';
 import {faChevronUp as faChevronUpSolid} from '@fortawesome/pro-solid-svg-icons/faChevronUp';
+import {faChevronDoubleUp as faChevronDoubleUpSolid} from '@fortawesome/pro-solid-svg-icons/faChevronDoubleUp';
 import {faChevronDown as faChevronDownSolid} from '@fortawesome/pro-solid-svg-icons/faChevronDown';
+import {faChevronDoubleDown as faChevronDoubleDownSolid} from '@fortawesome/pro-solid-svg-icons/faChevronDoubleDown';
 import {faCircle as faCircleRegular} from '@fortawesome/pro-regular-svg-icons/faCircle';
 import {faCircle as faCircleSolid} from '@fortawesome/pro-solid-svg-icons/faCircle';
 import {faColumns as faColumnsSolid} from '@fortawesome/pro-solid-svg-icons/faColumns';
@@ -127,7 +129,9 @@ function boot() {
     faChevronLeftSolid,
     faChevronRightSolid,
     faChevronUpSolid,
+    faChevronDoubleUpSolid,
     faChevronDownSolid,
+    faChevronDoubleDownSolid,
     faCircleRegular,
     faCircleSolid,
     faColumnsSolid,
