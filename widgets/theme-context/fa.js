@@ -80,6 +80,7 @@ import {faPlusSquare as faPlusSquareRegular} from '@fortawesome/pro-regular-svg-
 /* Q */
 
 /* R */
+import {faRadar as faRadarLight} from '@fortawesome/pro-light-svg-icons/faRadar';
 
 /* S */
 import {faSearch as faSearchSolid} from '@fortawesome/pro-solid-svg-icons/faSearch';
@@ -162,6 +163,7 @@ function boot() {
     faPlusCircleRegular,
     faPlusSquareSolid,
     faPlusSquareRegular,
+    faRadarLight,
     faSearchSolid,
     faSearchMinusSolid,
     faSearchPlusSolid,
