@@ -111,7 +111,10 @@ import {faTrashAlt as faTrashAltRegular} from '@fortawesome/pro-regular-svg-icon
 import {faUndo as faUndoSolid} from '@fortawesome/pro-solid-svg-icons/faUndo';
 import {faUpload as faUploadSolid} from '@fortawesome/pro-solid-svg-icons/faUpload';
 
-/* V */
+/* W */
+import {faWindowMaximize as faWindowMaximizeRegular} from '@fortawesome/pro-regular-svg-icons/faWindowMaximize';
+import {faWindowMinimize as faWindowMinimizeRegular} from '@fortawesome/pro-regular-svg-icons/faWindowMinimize';
+import {faWindowRestore as faWindowRestoreRegular} from '@fortawesome/pro-regular-svg-icons/faWindowRestore';
 
 function boot() {
   library.add(
@@ -186,7 +189,10 @@ function boot() {
     faTrashAltSolid,
     faTrashAltRegular,
     faUndoSolid,
-    faUploadSolid
+    faUploadSolid,
+    faWindowMaximizeRegular,
+    faWindowMinimizeRegular,
+    faWindowRestoreRegular
   );
 }
 
