@@ -39,7 +39,9 @@ function getGlobalStyles(theme) {
 }
 
 export default {
-  theme: 'default',
   getFonts,
   getGlobalStyles,
+  builders: {
+    default: require('../../lib/index.js').defaultBuilders,
+  },
 };

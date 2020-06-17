@@ -5,11 +5,12 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
+  "main": "/lib/index.js",
   "author": "",
   "license": "MIT",
   "config": {
     "xcraft": {
-      "commands": false
+      "commands": true
     }
   },
   "dependencies": {},
