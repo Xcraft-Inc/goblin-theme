@@ -1,7 +1,11 @@
 import React from 'react';
 import Widget from 'goblin-laboratory/widgets/widget';
+import ScrollableContainer from 'goblin-gadgets/widgets/scrollable-container/widget';
+import WithModel from 'goblin-laboratory/widgets/with-model/widget';
 import Button from 'gadgets/button/widget';
 import Container from 'gadgets/container/widget';
+import Label from 'gadgets/label/widget';
+import Field from 'gadgets/field/widget';
 /******************************************************************************/
 
 class CompositionDetailNC extends Widget {
@@ -10,11 +14,50 @@ class CompositionDetailNC extends Widget {
   }
 
   render() {
-    const {theme} = this.props;
+    const {widgetId, theme, composition, themeContext} = this.props;
+    if (!composition) {
+      return null;
+    }
     return (
-      <Container kind="column" height="100%">
-        {JSON.stringify(theme)}
-      </Container>
+      <WithModel
+        model={`backend.theme-composer@${themeContext}.themes.${composition}`}
+      >
+        <Container kind="column" width="100% " height="100%">
+          <ScrollableContainer
+            kind="panes"
+            id={`${widgetId}$scroll`}
+            restoreScroll={true}
+          >
+            <Container kind="row-pane">
+              <Label text={composition} grow="1" kind="title" />
+            </Container>
+            {Array.from(theme.entries()).map(([cat, props], key) => {
+              return (
+                <Container key={key} kind="column" grow="1">
+                  <Container kind="pane">
+                    <Container kind="row-pane">
+                      <Label text={cat} grow="1" kind="sub-title" />
+                    </Container>
+                    {typeof props === 'object' ? (
+                      Array.from(props.keys()).map((prop, key) => {
+                        return (
+                          <Container key={key} kind="row">
+                            <Field labelText={prop} model={`.${cat}.${prop}`} />
+                          </Container>
+                        );
+                      })
+                    ) : (
+                      <Container key={key} kind="row">
+                        <Field labelText={cat} model={`.${cat}`} />
+                      </Container>
+                    )}
+                  </Container>
+                </Container>
+              );
+            })}
+          </ScrollableContainer>
+        </Container>
+      </WithModel>
     );
   }
 }
@@ -29,7 +72,11 @@ const CompositionDetail = Widget.connect((state, props) => {
     ''
   );
   const isHidden = currentCompositor.split('@')[1] !== props.themeContext;
-  return {isHidden, theme: composer.get(`themes.${currentComposition}`)};
+  return {
+    isHidden,
+    composition: currentComposition,
+    theme: composer.get(`themes.${currentComposition}`),
+  };
 })(CompositionDetailNC);
 
 class CompositionsSelectorNC extends Widget {

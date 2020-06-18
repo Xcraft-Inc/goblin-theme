@@ -10,7 +10,7 @@ class ThemeEditorView extends View {
     const {workitemId, desktopId} = this.props;
     return (
       <Container kind="row" grow="1" width="100%">
-        <ThemeEditor id={workitemId} />
+        <ThemeEditor id={workitemId} desktopId={desktopId} />
       </Container>
     );
   }
