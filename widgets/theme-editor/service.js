@@ -20,6 +20,11 @@ Goblin.registerQuest(goblinName, 'create', function (quest, desktopId) {
   return quest.goblin.id;
 });
 
+Goblin.registerQuest(goblinName, 'select', function* (quest, composition) {
+  const deskAPI = quest.getAPI(quest.getDesktop());
+  yield deskAPI.changeTheme({name: composition});
+});
+
 Goblin.registerQuest(goblinName, 'delete', function (quest) {});
 
 // Singleton

@@ -13,6 +13,43 @@ class CompositionDetailNC extends Widget {
     super(...arguments);
   }
 
+  getFieldKind(type) {
+    switch (type) {
+      case 'string':
+      case 'number':
+      case 'color':
+        return type;
+      default:
+        null;
+    }
+  }
+
+  renderEntry(theme, cat, props) {
+    if (typeof props === 'object') {
+      return Array.from(props.keys()).map((prop, key) => {
+        let valueType = typeof theme.get(`${cat}.${prop}`, null);
+        const value = theme.get(`${cat}.${prop}`, null);
+        if (valueType === 'string' && value && value.startsWith('#')) {
+          valueType = 'color';
+        }
+        const kind = this.getFieldKind(valueType);
+        if (!kind) {
+          return null;
+        }
+        return (
+          <Container key={key} kind="row">
+            <Field labelText={prop} kind={kind} model={`.${cat}.${prop}`} />
+          </Container>
+        );
+      });
+    } else {
+      return (
+        <Container kind="row">
+          <Field labelText={cat} model={`.${cat}`} />
+        </Container>
+      );
+    }
+  }
   render() {
     const {widgetId, theme, composition, themeContext} = this.props;
     if (!composition) {
@@ -36,21 +73,9 @@ class CompositionDetailNC extends Widget {
                 <Container key={key} kind="column" grow="1">
                   <Container kind="pane">
                     <Container kind="row-pane">
-                      <Label text={cat} grow="1" kind="sub-title" />
+                      <Label text={cat} grow="1" kind="subaction" />
                     </Container>
-                    {typeof props === 'object' ? (
-                      Array.from(props.keys()).map((prop, key) => {
-                        return (
-                          <Container key={key} kind="row">
-                            <Field labelText={prop} model={`.${cat}.${prop}`} />
-                          </Container>
-                        );
-                      })
-                    ) : (
-                      <Container key={key} kind="row">
-                        <Field labelText={cat} model={`.${cat}`} />
-                      </Container>
-                    )}
+                    {this.renderEntry(theme, cat, props)}
                   </Container>
                 </Container>
               );
@@ -94,6 +119,7 @@ class CompositionsSelectorNC extends Widget {
       type: 'SELECT',
       composition,
     });
+    this.props.doAction('select', {composition});
   }
 
   render() {
@@ -139,7 +165,7 @@ const CompositionsSelector = Widget.connect((state, props) => {
 
 class ThemeComposerNC extends Widget {
   render() {
-    const {widgetId, isHidden, switchId, themeContext} = this.props;
+    const {widgetId, doAction, isHidden, switchId, themeContext} = this.props;
     if (isHidden) {
       return null;
     }
@@ -149,11 +175,13 @@ class ThemeComposerNC extends Widget {
           widgetId={widgetId}
           switchId={switchId}
           themeContext={themeContext}
+          doAction={doAction}
         />
         <CompositionDetail
           widgetId={widgetId}
           switchId={switchId}
           themeContext={themeContext}
+          doAction={doAction}
         />
       </Container>
     );

@@ -28,6 +28,7 @@ export default class ThemeEditor extends Widget {
             switchId={`${id}$switch`}
             widgetId={`${id}$${compId}`}
             themeContext={compId.split('@')[1]}
+            doAction={this.do.bind(this)}
           />
         ))}
       </Container>
