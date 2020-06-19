@@ -92,13 +92,7 @@ const CompositionDetail = Widget.connect((state, props) => {
   const currentComposition = state.get(
     `widgets.${props.widgetId}.currentComposition`
   );
-  const currentCompositor = state.get(
-    `widgets.${props.switchId}.currentCompositor`,
-    ''
-  );
-  const isHidden = currentCompositor.split('@')[1] !== props.themeContext;
   return {
-    isHidden,
     composition: currentComposition,
     theme: composer.get(`themes.${currentComposition}`),
   };
@@ -108,10 +102,6 @@ class CompositionsSelectorNC extends Widget {
   constructor() {
     super(...arguments);
     this.select = this.select.bind(this);
-    this.dispatch({
-      type: 'SELECT',
-      composition: this.props.themes[0],
-    });
   }
 
   select(composition) {
@@ -151,16 +141,13 @@ class CompositionsSelectorNC extends Widget {
 }
 
 const CompositionsSelector = Widget.connect((state, props) => {
-  const composer = state.get(`backend.theme-composer@${props.themeContext}`);
   const currentComposition = state.get(
     `widgets.${props.widgetId}.currentComposition`
   );
-  const currentCompositor = state.get(
-    `widgets.${props.switchId}.currentCompositor`,
-    ''
-  );
-  const isHidden = currentCompositor.split('@')[1] !== props.themeContext;
-  return {isHidden, currentComposition, themes: composer.get('themes')};
+
+  const composer = state.get(`backend.theme-composer@${props.themeContext}`);
+
+  return {currentComposition, themes: composer.get('themes')};
 })(CompositionsSelectorNC);
 
 class ThemeComposerNC extends Widget {
@@ -193,7 +180,11 @@ const ThemeComposer = Widget.connect((state, props) => {
     `widgets.${props.switchId}.currentCompositor`,
     ''
   );
-  const isHidden = currentCompositor.split('@')[1] !== props.themeContext;
+
+  let isHidden = true;
+  if (currentCompositor) {
+    isHidden = currentCompositor.split('@')[1] !== props.themeContext;
+  }
   return {isHidden};
 })(ThemeComposerNC);
 

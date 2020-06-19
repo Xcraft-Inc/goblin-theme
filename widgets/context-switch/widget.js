@@ -8,10 +8,6 @@ class ContextSwitch extends Widget {
   constructor() {
     super(...arguments);
     this.select = this.select.bind(this);
-    this.dispatch({
-      type: 'SELECT',
-      compositor: this.props.availableCompositors[0],
-    });
   }
 
   select(compositor) {
