@@ -99,6 +99,7 @@ import {faSquare as faSquareLight} from '@fortawesome/pro-light-svg-icons/faSqua
 import {faSquare as faSquareRegular} from '@fortawesome/pro-regular-svg-icons/faSquare';
 import {faSquare as faSquareSolid} from '@fortawesome/pro-solid-svg-icons/faSquare';
 import {faStop as faStopSolid} from '@fortawesome/pro-solid-svg-icons/faStop';
+import {faSun as faSunSolid} from '@fortawesome/pro-solid-svg-icons/faSun';
 
 /* T */
 import {faTachometer as faTachometerSolid} from '@fortawesome/pro-solid-svg-icons/faTachometer';
@@ -189,6 +190,7 @@ function boot() {
     faSquareRegular,
     faSquareSolid,
     faStopSolid,
+    faSunSolid,
     faTachometerSolid,
     faTimesSolid,
     faTimesCircleSolid,
