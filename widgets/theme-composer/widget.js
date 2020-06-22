@@ -25,6 +25,9 @@ class CompositionDetailNC extends Widget {
   }
 
   renderEntry(theme, cat, props) {
+    if (!props) {
+      return null;
+    }
     if (typeof props === 'object') {
       return Array.from(props.keys()).map((prop, key) => {
         let valueType = typeof theme.get(`${cat}.${prop}`, null);
