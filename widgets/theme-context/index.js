@@ -32,14 +32,16 @@ function getGlobalStyles(theme) {
       userSelect: 'none',
     },
 
-    input: {
+    'input': {
       fontFamily: theme.typo.font,
     },
   };
 }
 
 export default {
-  theme: 'default',
   getFonts,
   getGlobalStyles,
+  builders: {
+    default: require('../../lib/index.js').defaultBuilders,
+  },
 };
