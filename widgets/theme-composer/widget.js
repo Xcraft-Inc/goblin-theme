@@ -28,8 +28,7 @@ class CompositionDetailNC extends Widget {
     if (typeof props === 'object') {
       return Array.from(props.keys()).map((prop, key) => {
         let valueType = typeof theme.get(`${cat}.${prop}`, null);
-        const value = theme.get(`${cat}.${prop}`, null);
-        if (valueType === 'string' && value && value.startsWith('#')) {
+        if (cat === 'colors') {
           valueType = 'color';
         }
         const kind = this.getFieldKind(valueType);
@@ -95,6 +94,7 @@ const CompositionDetail = Widget.connect((state, props) => {
   return {
     composition: currentComposition,
     theme: composer.get(`themes.${currentComposition}`),
+    colors: composer.get('colors'),
   };
 })(CompositionDetailNC);
 
