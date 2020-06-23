@@ -40,6 +40,7 @@ import {faEllipsisH as faEllipsisHSolid} from '@fortawesome/pro-solid-svg-icons/
 import {faEllipsisV as faEllipsisVSolid} from '@fortawesome/pro-solid-svg-icons/faEllipsisV';
 import {faEraser as faEraserSolid} from '@fortawesome/pro-solid-svg-icons/faEraser';
 import {faExternalLink as faExternalLinkSolid} from '@fortawesome/pro-solid-svg-icons/faExternalLink';
+import {faEyeDropper as faEyeDropperSolid} from '@fortawesome/pro-solid-svg-icons/faEyeDropper';
 
 /* F */
 import {faFolder as faFolderSolid} from '@fortawesome/pro-solid-svg-icons/faFolder';
@@ -70,12 +71,16 @@ import {faMinusSquare as faMinusSquareRegular} from '@fortawesome/pro-regular-sv
 /* O */
 
 /* P */
+import {faPalette as faPaletteRegular} from '@fortawesome/pro-regular-svg-icons/faPalette';
+import {faPalette as faPaletteSolid} from '@fortawesome/pro-solid-svg-icons/faPalette';
+import {faPen as faPenSolid} from '@fortawesome/pro-solid-svg-icons/faPen';
 import {faPlay as faPlaySolid} from '@fortawesome/pro-solid-svg-icons/faPlay';
 import {faPlus as faPlusSolid} from '@fortawesome/pro-solid-svg-icons/faPlus';
 import {faPlusCircle as faPlusCircleSolid} from '@fortawesome/pro-solid-svg-icons/faPlusCircle';
 import {faPlusCircle as faPlusCircleRegular} from '@fortawesome/pro-regular-svg-icons/faPlusCircle';
 import {faPlusSquare as faPlusSquareSolid} from '@fortawesome/pro-solid-svg-icons/faPlusSquare';
 import {faPlusSquare as faPlusSquareRegular} from '@fortawesome/pro-regular-svg-icons/faPlusSquare';
+import {faPrint as faPrintSolid} from '@fortawesome/pro-solid-svg-icons/faPrint';
 
 /* Q */
 
@@ -88,11 +93,13 @@ import {faSearchMinus as faSearchMinusSolid} from '@fortawesome/pro-solid-svg-ic
 import {faSearchPlus as faSearchPlusSolid} from '@fortawesome/pro-solid-svg-icons/faSearchPlus';
 import {faSearchPlus as faSearchPlusLight} from '@fortawesome/pro-light-svg-icons/faSearchPlus';
 import {faShower as faShowerSolid} from '@fortawesome/pro-solid-svg-icons/faShower';
+import {faSlidersH as faSlidersHSolid} from '@fortawesome/pro-solid-svg-icons/faSlidersH';
 import {faSpinner as faSpinnerSolid} from '@fortawesome/pro-solid-svg-icons/faSpinner';
 import {faSquare as faSquareLight} from '@fortawesome/pro-light-svg-icons/faSquare';
 import {faSquare as faSquareRegular} from '@fortawesome/pro-regular-svg-icons/faSquare';
 import {faSquare as faSquareSolid} from '@fortawesome/pro-solid-svg-icons/faSquare';
 import {faStop as faStopSolid} from '@fortawesome/pro-solid-svg-icons/faStop';
+import {faSun as faSunSolid} from '@fortawesome/pro-solid-svg-icons/faSun';
 
 /* T */
 import {faTachometer as faTachometerSolid} from '@fortawesome/pro-solid-svg-icons/faTachometer';
@@ -148,6 +155,7 @@ function boot() {
     faEllipsisVSolid,
     faEraserSolid,
     faExternalLinkSolid,
+    faEyeDropperSolid,
     faFolderSolid,
     faFolderOpenSolid,
     faHomeSolid,
@@ -160,23 +168,29 @@ function boot() {
     faMinusCircleRegular,
     faMinusSquareSolid,
     faMinusSquareRegular,
+    faPaletteRegular,
+    faPaletteSolid,
+    faPenSolid,
     faPlaySolid,
     faPlusSolid,
     faPlusCircleSolid,
     faPlusCircleRegular,
     faPlusSquareSolid,
     faPlusSquareRegular,
+    faPrintSolid,
     faRadarLight,
     faSearchSolid,
     faSearchMinusSolid,
     faSearchPlusSolid,
     faSearchPlusLight,
     faShowerSolid,
+    faSlidersHSolid,
     faSpinnerSolid,
     faSquareLight,
     faSquareRegular,
     faSquareSolid,
     faStopSolid,
+    faSunSolid,
     faTachometerSolid,
     faTimesSolid,
     faTimesCircleSolid,
