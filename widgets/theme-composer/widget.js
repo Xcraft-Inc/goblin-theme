@@ -6,6 +6,7 @@ import Button from 'gadgets/button/widget';
 import Container from 'gadgets/container/widget';
 import Label from 'gadgets/label/widget';
 import Field from 'gadgets/field/widget';
+
 /******************************************************************************/
 
 class CompositionDetailNC extends Widget {
@@ -52,42 +53,54 @@ class CompositionDetailNC extends Widget {
       );
     }
   }
+
+  renderList() {
+    const {widgetId, theme} = this.props;
+
+    return (
+      <ScrollableContainer
+        kind="panes"
+        id={`${widgetId}$scroll`}
+        restoreScroll={true}
+      >
+        {Array.from(theme.entries()).map(([cat, props], key) => {
+          return (
+            <Container key={key} kind="column" grow="1">
+              <Container kind="pane">
+                <Container kind="row-pane">
+                  <Label text={cat} grow="1" kind="title" />
+                </Container>
+                {this.renderEntry(theme, cat, props)}
+              </Container>
+            </Container>
+          );
+        })}
+      </ScrollableContainer>
+    );
+  }
+
   render() {
-    const {widgetId, theme, composition, themeContext} = this.props;
+    const {composition, themeContext} = this.props;
     if (!composition) {
       return null;
     }
+
     return (
       <WithModel
         model={`backend.theme-composer@${themeContext}.themes.${composition}`}
       >
-        <Container kind="column" width="100% " height="100%">
-          <ScrollableContainer
-            kind="panes"
-            id={`${widgetId}$scroll`}
-            restoreScroll={true}
-          >
-            <Container kind="row-pane">
-              <Label text={composition} grow="1" kind="title" />
-            </Container>
-            {Array.from(theme.entries()).map(([cat, props], key) => {
-              return (
-                <Container key={key} kind="column" grow="1">
-                  <Container kind="pane">
-                    <Container kind="row-pane">
-                      <Label text={cat} grow="1" kind="subaction" />
-                    </Container>
-                    {this.renderEntry(theme, cat, props)}
-                  </Container>
-                </Container>
-              );
-            })}
-          </ScrollableContainer>
+        <Container kind="view">
+          <Container kind="pane-header">
+            <Label text={composition} kind="pane-header" />
+          </Container>
+          {this.renderList()}
         </Container>
       </WithModel>
     );
   }
 }
+
+/******************************************************************************/
 
 const CompositionDetail = Widget.connect((state, props) => {
   const composer = state.get(`backend.theme-composer@${props.themeContext}`);
@@ -100,6 +113,8 @@ const CompositionDetail = Widget.connect((state, props) => {
     colors: composer.get('colors'),
   };
 })(CompositionDetailNC);
+
+/******************************************************************************/
 
 class CompositionsSelectorNC extends Widget {
   constructor() {
@@ -120,28 +135,50 @@ class CompositionsSelectorNC extends Widget {
 
     return (
       <Container
-        kind="column"
-        width="200px"
-        height="100%"
-        backgroundColor="lightgrey"
+        kind="view"
+        horizontalSpacing="large"
+        backgroundColor={this.context.theme.palette.footerBackground}
       >
-        {Array.from(themes.keys()).map((name, key) => {
-          const select = () => this.select(name);
-          return (
-            <Button
-              key={key}
-              text={name}
-              grow="1"
-              kind="table-action"
-              onClick={select}
-              active={currentComposition === name}
-            />
-          );
-        })}
+        <Container kind="pane-header">
+          <Label text="Thèmes" kind="pane-header" />
+        </Container>
+        <Container kind="panes">
+          {Array.from(themes.keys())
+            .filter(
+              (name) =>
+                name !== 'steampunk' &&
+                name !== 'oldtimer' &&
+                name !== 'royal' &&
+                name !== 'clock'
+            )
+            .map((name, key) => {
+              const select = () => this.select(name);
+              return (
+                <Button
+                  key={key}
+                  kind="menu-item"
+                  text={name}
+                  glyph={
+                    currentComposition === name
+                      ? 'solid/chevron-right'
+                      : 'solid/none'
+                  }
+                  glyphPosition="right"
+                  justify="between"
+                  textTransform="none"
+                  grow="1"
+                  onClick={select}
+                  active={currentComposition === name}
+                />
+              );
+            })}
+        </Container>
       </Container>
     );
   }
 }
+
+/******************************************************************************/
 
 const CompositionsSelector = Widget.connect((state, props) => {
   const currentComposition = state.get(
@@ -152,6 +189,8 @@ const CompositionsSelector = Widget.connect((state, props) => {
 
   return {currentComposition, themes: composer.get('themes')};
 })(CompositionsSelectorNC);
+
+/******************************************************************************/
 
 class ThemeComposerNC extends Widget {
   render() {
@@ -177,6 +216,8 @@ class ThemeComposerNC extends Widget {
     );
   }
 }
+
+/******************************************************************************/
 
 const ThemeComposer = Widget.connect((state, props) => {
   const currentCompositor = state.get(
