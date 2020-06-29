@@ -43,6 +43,8 @@ import {faExternalLink as faExternalLinkSolid} from '@fortawesome/pro-solid-svg-
 import {faEyeDropper as faEyeDropperSolid} from '@fortawesome/pro-solid-svg-icons/faEyeDropper';
 
 /* F */
+import {faFile as faFileRegular} from '@fortawesome/pro-regular-svg-icons/faFile';
+import {faFilePdf as faFilePfdSolid} from '@fortawesome/pro-solid-svg-icons/faFilePdf';
 import {faFolder as faFolderSolid} from '@fortawesome/pro-solid-svg-icons/faFolder';
 import {faFolderOpen as faFolderOpenSolid} from '@fortawesome/pro-solid-svg-icons/faFolderOpen';
 
@@ -127,6 +129,7 @@ function boot() {
   library.add(
     faBeerSolid,
     faBugSolid,
+
     faCalendarRegular,
     faCalendarAltRegular,
     faCalendarTimesRegular,
@@ -147,8 +150,10 @@ function boot() {
     faCircleSolid,
     faColumnsSolid,
     faCrownSolid,
+
     faDotCircleRegular,
     faDownloadSolid,
+
     faEditSolid,
     faEditLight,
     faEllipsisHSolid,
@@ -156,18 +161,28 @@ function boot() {
     faEraserSolid,
     faExternalLinkSolid,
     faEyeDropperSolid,
+
+    faFileRegular,
+    faFilePfdSolid,
     faFolderSolid,
     faFolderOpenSolid,
+
     faHomeSolid,
+
     faIndustrySolid,
+
     faJackOLanternSolid,
+
     faLanguageSolid,
+
     faLeafSolid,
+
     faMinusSolid,
     faMinusCircleSolid,
     faMinusCircleRegular,
     faMinusSquareSolid,
     faMinusSquareRegular,
+
     faPaletteRegular,
     faPaletteSolid,
     faPenSolid,
@@ -178,7 +193,9 @@ function boot() {
     faPlusSquareSolid,
     faPlusSquareRegular,
     faPrintSolid,
+
     faRadarLight,
+
     faSearchSolid,
     faSearchMinusSolid,
     faSearchPlusSolid,
@@ -191,6 +208,7 @@ function boot() {
     faSquareSolid,
     faStopSolid,
     faSunSolid,
+
     faTachometerSolid,
     faTimesSolid,
     faTimesCircleSolid,
@@ -202,8 +220,10 @@ function boot() {
     faTrashSolid,
     faTrashAltSolid,
     faTrashAltRegular,
+
     faUndoSolid,
     faUploadSolid,
+
     faWindowMaximizeRegular,
     faWindowMinimizeRegular,
     faWindowRestoreRegular
