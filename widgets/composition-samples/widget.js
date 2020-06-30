@@ -262,7 +262,7 @@ class CompositionSamplesNC extends Widget {
       <Container kind="column">
         <Container kind="row">
           <Table
-            widgetId="composition-samples-table"
+            widgetId={this.props.widgetId}
             data={t1}
             frame={true}
             selectionMode="multi"
