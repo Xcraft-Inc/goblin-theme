@@ -11,12 +11,98 @@ import Table from 'gadgets/table/widget';
 import Ticket from 'gadgets/ticket/widget';
 import Gauge from 'gadgets/gauge/widget';
 import Slider from 'gadgets/slider/widget';
+import Checkbox from 'gadgets/checkbox/widget';
+
+/******************************************************************************/
+
+class SettingsList extends Widget {
+  constructor() {
+    super(...arguments);
+  }
+
+  valueToSlider(value) {
+    const s = this.props.min;
+    const d = this.props.max - this.props.min;
+    return ((value - s) / d) * 100;
+  }
+
+  sliderToValue(value) {
+    const s = this.props.min;
+    const d = this.props.max - this.props.min;
+    return s + (value / 100) * d;
+  }
+
+  renderItem(value) {
+    return (
+      <Checkbox
+        kind="active"
+        key={value}
+        text={value}
+        checked={value === this.props.value}
+        onChange={() => this.props.onChange(value)}
+      />
+    );
+  }
+
+  render() {
+    return (
+      <Container kind="row-pane" subkind="left">
+        <Label
+          text={this.props.text}
+          width={this.props.labelWidth || '120px'}
+          justify={this.props.labelJustify}
+        />
+        {this.props.list.map((value) => this.renderItem(value))}
+        <Label width="20px" />
+        <Slider
+          width="150px"
+          direction="horizontal"
+          value={this.valueToSlider(this.props.value)}
+          onChange={(value) => this.props.onChange(this.sliderToValue(value))}
+        />
+      </Container>
+    );
+  }
+}
 
 /******************************************************************************/
 
 class CompositionSamplesNC extends Widget {
   constructor() {
     super(...arguments);
+
+    this.state = {
+      scale: 1,
+    };
+  }
+
+  //#region get/set
+  get scale() {
+    return this.state.scale;
+  }
+  set scale(value) {
+    this.setState({
+      scale: value,
+    });
+  }
+  //#endregion
+
+  renderScale() {
+    return (
+      <Container kind="pane">
+        <Container kind="row">
+          <SettingsList
+            text="Scale"
+            labelWidth="60px"
+            list={[0.5, 0.75, 1, 1.2, 1.5, 2]}
+            min={0.5}
+            max={2}
+            value={this.scale}
+            onChange={(value) => (this.scale = value)}
+          />
+        </Container>
+      </Container>
+    );
   }
 
   renderButtons() {
@@ -296,25 +382,33 @@ class CompositionSamplesNC extends Widget {
       return null;
     }
 
+    const style = {
+      transform: `scale(${this.scale})`,
+      transformOrigin: 'top left',
+    };
+
     return (
       <Container kind="view" grow="1">
         <Container kind="pane-header">
           <Label text="Exemples" kind="pane-header" />
         </Container>
         <Container kind="panes">
-          <Container kind="pane">
-            {this.renderButtons()}
-            <Separator kind="exact" height="10px" />
-            {this.renderFields()}
-            <Separator kind="exact" height="10px" />
-            {this.renderTables()}
-            <Separator kind="exact" height="10px" />
-            {this.renderTickets()}
-            <Separator kind="exact" height="10px" />
-            {this.renderGauges()}
-            <Separator kind="exact" height="10px" />
-            {this.renderSliders()}
-          </Container>
+          {this.renderScale()}
+          <div style={style}>
+            <Container kind="pane">
+              {this.renderButtons()}
+              <Separator kind="exact" height="10px" />
+              {this.renderFields()}
+              <Separator kind="exact" height="10px" />
+              {this.renderTables()}
+              <Separator kind="exact" height="10px" />
+              {this.renderTickets()}
+              <Separator kind="exact" height="10px" />
+              {this.renderGauges()}
+              <Separator kind="exact" height="10px" />
+              {this.renderSliders()}
+            </Container>
+          </div>
         </Container>
       </Container>
     );
