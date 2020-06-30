@@ -6,6 +6,7 @@ import Button from 'gadgets/button/widget';
 import Container from 'gadgets/container/widget';
 import Label from 'gadgets/label/widget';
 import Field from 'gadgets/field/widget';
+import CompositionSamples from '../composition-samples/widget';
 
 /******************************************************************************/
 
@@ -41,14 +42,24 @@ class CompositionDetailNC extends Widget {
         }
         return (
           <Container key={key} kind="row">
-            <Field labelText={prop} kind={kind} model={`.${cat}.${prop}`} />
+            <Field
+              labelWidth="200px"
+              labelText={prop}
+              kind={kind}
+              model={`.${cat}.${prop}`}
+            />
           </Container>
         );
       });
     } else {
       return (
         <Container kind="row">
-          <Field labelText={cat} model={`.${cat}`} />
+          <Field
+            labelWidth="200px"
+            labelText={cat}
+            kind="string"
+            model={`.${cat}`}
+          />
         </Container>
       );
     }
@@ -198,6 +209,7 @@ class ThemeComposerNC extends Widget {
     if (isHidden) {
       return null;
     }
+
     return (
       <Container kind="row" grow="1" width="100%">
         <CompositionsSelector
@@ -207,6 +219,12 @@ class ThemeComposerNC extends Widget {
           doAction={doAction}
         />
         <CompositionDetail
+          widgetId={widgetId}
+          switchId={switchId}
+          themeContext={themeContext}
+          doAction={doAction}
+        />
+        <CompositionSamples
           widgetId={widgetId}
           switchId={switchId}
           themeContext={themeContext}
