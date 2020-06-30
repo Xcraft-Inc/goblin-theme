@@ -8,42 +8,54 @@ import Field from 'gadgets/field/widget';
 
 /******************************************************************************/
 
+function getFieldType(type) {
+  switch (type) {
+    case 'string':
+    case 'number':
+    case 'color':
+      return type;
+    default:
+      null;
+  }
+}
+
+function getFieldKind(theme, cat, prop) {
+  let valueType;
+
+  if (cat === 'colors') {
+    valueType = 'color';
+  } else {
+    const value = theme.get(`${cat}.${prop}`, null);
+    valueType = typeof value;
+  }
+
+  return getFieldType(valueType);
+}
+
+/******************************************************************************/
+
 class CompositionDetailNC extends Widget {
   constructor() {
     super(...arguments);
-  }
-
-  getFieldKind(type) {
-    switch (type) {
-      case 'string':
-      case 'number':
-      case 'color':
-        return type;
-      default:
-        null;
-    }
   }
 
   renderEntry(theme, cat, props) {
     if (!props) {
       return null;
     }
+
     if (typeof props === 'object') {
       return Array.from(props.keys()).map((prop, key) => {
-        let valueType = typeof theme.get(`${cat}.${prop}`, null);
-        if (cat === 'colors') {
-          valueType = 'color';
-        }
-        const kind = this.getFieldKind(valueType);
+        const kind = getFieldKind(theme, cat, prop);
         if (!kind) {
           return null;
         }
         return (
           <Container key={key} kind="row">
             <Field
+              kind={kind}
               labelWidth="200px"
               labelText={prop}
-              kind={kind}
               model={`.${cat}.${prop}`}
             />
           </Container>
@@ -53,9 +65,9 @@ class CompositionDetailNC extends Widget {
       return (
         <Container kind="row">
           <Field
+            kind="string"
             labelWidth="200px"
             labelText={cat}
-            kind="string"
             model={`.${cat}`}
           />
         </Container>
