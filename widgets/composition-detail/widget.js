@@ -54,6 +54,7 @@ class CompositionDetailNC extends Widget {
           <Container key={key} kind="row">
             <Field
               kind={kind}
+              changeComboMode="whenClosed"
               labelWidth="200px"
               labelText={prop}
               model={`.${cat}.${prop}`}
