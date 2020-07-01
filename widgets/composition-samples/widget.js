@@ -12,6 +12,7 @@ import Ticket from 'gadgets/ticket/widget';
 import Gauge from 'gadgets/gauge/widget';
 import Slider from 'gadgets/slider/widget';
 import Checkbox from 'gadgets/checkbox/widget';
+import Frame from 'goblin-laboratory/widgets/frame/widget';
 
 /******************************************************************************/
 
@@ -395,19 +396,26 @@ class CompositionSamplesNC extends Widget {
         <Container kind="panes">
           {this.renderScale()}
           <div style={style}>
-            <Container kind="pane">
-              {this.renderButtons()}
-              <Separator kind="exact" height="10px" />
-              {this.renderFields()}
-              <Separator kind="exact" height="10px" />
-              {this.renderTables()}
-              <Separator kind="exact" height="10px" />
-              {this.renderTickets()}
-              <Separator kind="exact" height="10px" />
-              {this.renderGauges()}
-              <Separator kind="exact" height="10px" />
-              {this.renderSliders()}
-            </Container>
+            <Frame
+              labId={this.context.labId}
+              store={this.context.store}
+              currentTheme={this.props.composition}
+              themeContext={this.props.themeContext}
+            >
+              <Container kind="pane">
+                {this.renderButtons()}
+                <Separator kind="exact" height="10px" />
+                {this.renderFields()}
+                <Separator kind="exact" height="10px" />
+                {this.renderTables()}
+                <Separator kind="exact" height="10px" />
+                {this.renderTickets()}
+                <Separator kind="exact" height="10px" />
+                {this.renderGauges()}
+                <Separator kind="exact" height="10px" />
+                {this.renderSliders()}
+              </Container>
+            </Frame>
           </div>
         </Container>
       </Container>

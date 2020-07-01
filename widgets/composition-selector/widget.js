@@ -17,7 +17,7 @@ class CompositionsSelectorNC extends Widget {
       type: 'SELECT',
       composition,
     });
-    this.props.doAction('select', {composition});
+    //? this.props.doAction('select', {composition});
   }
 
   render() {
