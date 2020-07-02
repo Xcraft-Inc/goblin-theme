@@ -23,6 +23,9 @@ function getFieldKind(theme, cat, prop) {
   let valueType;
 
   if (cat === 'colors') {
+    if (prop === 'isDarkTheme') {
+      return 'bool';
+    }
     valueType = 'color';
   } else {
     const value = theme.get(`${cat}.${prop}`, null);
