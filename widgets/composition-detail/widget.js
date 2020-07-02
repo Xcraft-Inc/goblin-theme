@@ -35,6 +35,16 @@ function getFieldKind(theme, cat, prop) {
   return getFieldType(valueType);
 }
 
+function compareStrings(s1, s2) {
+  if (s1 < s2) {
+    return -1;
+  }
+  if (s1 > s2) {
+    return 1;
+  }
+  return 0;
+}
+
 /******************************************************************************/
 
 class CompositionDetailNC extends Widget {
@@ -48,23 +58,25 @@ class CompositionDetailNC extends Widget {
     }
 
     if (typeof props === 'object') {
-      return Array.from(props.keys()).map((prop, key) => {
-        const kind = getFieldKind(theme, cat, prop);
-        if (!kind) {
-          return null;
-        }
-        return (
-          <Container key={key} kind="row">
-            <Field
-              kind={kind}
-              changeComboMode="whenClosed"
-              labelWidth="200px"
-              labelText={prop}
-              model={`.${cat}.${prop}`}
-            />
-          </Container>
-        );
-      });
+      return Array.from(props.keys())
+        .sort((k1, k2) => compareStrings(k1, k2))
+        .map((prop, key) => {
+          const kind = getFieldKind(theme, cat, prop);
+          if (!kind) {
+            return null;
+          }
+          return (
+            <Container key={key} kind="row">
+              <Field
+                kind={kind}
+                changeComboMode="whenClosed"
+                labelWidth="200px"
+                labelText={prop}
+                model={`.${cat}.${prop}`}
+              />
+            </Container>
+          );
+        });
     } else {
       return (
         <Container kind="row">
