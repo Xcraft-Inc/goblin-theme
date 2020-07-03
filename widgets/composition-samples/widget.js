@@ -59,6 +59,8 @@ class SettingsList extends Widget {
           width="150px"
           direction="horizontal"
           value={this.valueToSlider(this.props.value)}
+          changeMode="throttled"
+          throttleDelay={50}
           onChange={(value) => this.props.onChange(this.sliderToValue(value))}
         />
       </Container>
