@@ -3,13 +3,17 @@ import Widget from 'goblin-laboratory/widgets/widget';
 import Button from 'gadgets/button/widget';
 import Container from 'gadgets/container/widget';
 import Label from 'gadgets/label/widget';
+import * as styles from './styles';
 
 /******************************************************************************/
 
 class CompositionsSelectorNC extends Widget {
   constructor() {
     super(...arguments);
+    this.styles = styles;
+
     this.select = this.select.bind(this);
+    this.toggleEggs = this.toggleEggs.bind(this);
   }
 
   select(composition) {
@@ -20,12 +24,17 @@ class CompositionsSelectorNC extends Widget {
     //? this.props.doAction('select', {composition});
   }
 
+  toggleEggs() {
+    this.doFor(this.props.clientSessionId, 'set-access-to-eggs-themes', {
+      show: !this.props.accessToEggsThemes,
+    });
+  }
+
   /******************************************************************************/
 
   renderTheme(key, theme, index) {
     const active = key === this.props.currentComposition;
     const name = theme.get('name');
-    const handleClick = () => this.select(key);
 
     return (
       <Button
@@ -37,7 +46,7 @@ class CompositionsSelectorNC extends Widget {
         justify="between"
         textTransform="none"
         grow="1"
-        onClick={handleClick}
+        onClick={() => this.select(key)}
         active={active}
       />
     );
@@ -49,11 +58,20 @@ class CompositionsSelectorNC extends Widget {
     for (const key of this.props.themes.keys()) {
       const theme = this.props.themes.get(key);
       const egg = theme.get('meta.egg', false);
-      if (!egg) {
+      if (!egg || this.props.accessToEggsThemes) {
         result.push(this.renderTheme(key, theme, index++));
       }
     }
     return result;
+  }
+
+  renderEggsButton() {
+    return (
+      <div
+        className={this.styles.classNames.eggsButton}
+        onClick={this.toggleEggs}
+      />
+    );
   }
 
   render() {
@@ -66,7 +84,10 @@ class CompositionsSelectorNC extends Widget {
         <Container kind="pane-header">
           <Label text="Thèmes" kind="pane-header" />
         </Container>
-        <Container kind="panes">{this.renderThemes()}</Container>
+        <Container kind="panes">
+          {this.renderThemes()}
+          {this.renderEggsButton()}
+        </Container>
       </Container>
     );
   }
@@ -75,13 +96,18 @@ class CompositionsSelectorNC extends Widget {
 /******************************************************************************/
 
 const CompositionsSelector = Widget.connect((state, props) => {
+  const userSession = Widget.getUserSession(state);
+  const clientSessionId = userSession.get('id');
+  const accessToEggsThemes = userSession.get('accessToEggsThemes');
+
   const currentComposition = state.get(
     `widgets.${props.widgetId}.currentComposition`
   );
 
   const composer = state.get(`backend.theme-composer@${props.themeContext}`);
+  const themes = composer.get('themes');
 
-  return {currentComposition, themes: composer.get('themes')};
+  return {clientSessionId, accessToEggsThemes, currentComposition, themes};
 })(CompositionsSelectorNC);
 
 export default CompositionsSelector;
