@@ -45,6 +45,18 @@ function compareStrings(s1, s2) {
   return 0;
 }
 
+function compareProps(theme, cat, p1, p2) {
+  const k1 = getFieldKind(theme, cat, p1);
+  const k2 = getFieldKind(theme, cat, p2);
+
+  const r = compareStrings(k1, k2);
+  if (r !== 0) {
+    return r;
+  }
+
+  return compareStrings(p1, p2);
+}
+
 /******************************************************************************/
 
 class CompositionDetailNC extends Widget {
@@ -59,14 +71,14 @@ class CompositionDetailNC extends Widget {
 
     if (typeof props === 'object') {
       return Array.from(props.keys())
-        .sort((k1, k2) => compareStrings(k1, k2))
-        .map((prop, key) => {
+        .sort((p1, p2) => compareProps(theme, cat, p1, p2))
+        .map((prop, index) => {
           const kind = getFieldKind(theme, cat, prop);
           if (!kind) {
             return null;
           }
           return (
-            <Container key={key} kind="row">
+            <Container key={index} kind="row">
               <Field
                 kind={kind}
                 changeComboMode="whenClosed"
