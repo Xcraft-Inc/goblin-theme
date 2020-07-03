@@ -20,9 +20,43 @@ class CompositionsSelectorNC extends Widget {
     //? this.props.doAction('select', {composition});
   }
 
-  render() {
-    const {currentComposition, themes} = this.props;
+  /******************************************************************************/
 
+  renderTheme(key, theme, index) {
+    const active = key === this.props.currentComposition;
+    const name = theme.get('name');
+    const handleClick = () => this.select(key);
+
+    return (
+      <Button
+        key={index}
+        kind="menu-item"
+        text={name}
+        glyph={active ? 'solid/chevron-right' : 'solid/none'}
+        glyphPosition="right"
+        justify="between"
+        textTransform="none"
+        grow="1"
+        onClick={handleClick}
+        active={active}
+      />
+    );
+  }
+
+  renderThemes() {
+    const result = [];
+    let index = 0;
+    for (const key of this.props.themes.keys()) {
+      const theme = this.props.themes.get(key);
+      const egg = theme.get('meta.egg', false);
+      if (!egg) {
+        result.push(this.renderTheme(key, theme, index++));
+      }
+    }
+    return result;
+  }
+
+  render() {
     return (
       <Container
         kind="view"
@@ -32,37 +66,7 @@ class CompositionsSelectorNC extends Widget {
         <Container kind="pane-header">
           <Label text="Thèmes" kind="pane-header" />
         </Container>
-        <Container kind="panes">
-          {Array.from(themes.keys())
-            .filter(
-              (name) =>
-                name !== 'steampunk' &&
-                name !== 'oldtimer' &&
-                name !== 'royal' &&
-                name !== 'clock'
-            )
-            .map((name, key) => {
-              const select = () => this.select(name);
-              return (
-                <Button
-                  key={key}
-                  kind="menu-item"
-                  text={name}
-                  glyph={
-                    currentComposition === name
-                      ? 'solid/chevron-right'
-                      : 'solid/none'
-                  }
-                  glyphPosition="right"
-                  justify="between"
-                  textTransform="none"
-                  grow="1"
-                  onClick={select}
-                  active={currentComposition === name}
-                />
-              );
-            })}
-        </Container>
+        <Container kind="panes">{this.renderThemes()}</Container>
       </Container>
     );
   }
