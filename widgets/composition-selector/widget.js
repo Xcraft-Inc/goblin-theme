@@ -32,9 +32,10 @@ class CompositionsSelectorNC extends Widget {
 
   /******************************************************************************/
 
-  renderTheme(key, theme, index) {
-    const active = key === this.props.currentComposition;
+  renderTheme(key, index) {
+    const theme = this.props.themes.get(key);
     const name = theme.get('name');
+    const active = key === this.props.currentComposition;
 
     return (
       <Button
@@ -53,16 +54,13 @@ class CompositionsSelectorNC extends Widget {
   }
 
   renderThemes() {
-    const result = [];
-    let index = 0;
-    for (const key of this.props.themes.keys()) {
-      const theme = this.props.themes.get(key);
-      const egg = theme.get('meta.egg', false);
-      if (!egg || this.props.accessToEggsThemes) {
-        result.push(this.renderTheme(key, theme, index++));
-      }
-    }
-    return result;
+    return Array.from(this.props.themes.keys())
+      .filter((key) => {
+        const theme = this.props.themes.get(key);
+        const egg = theme.get('meta.egg', false);
+        return !egg || this.props.accessToEggsThemes;
+      })
+      .map((key, index) => this.renderTheme(key, index));
   }
 
   renderEggsButton() {
