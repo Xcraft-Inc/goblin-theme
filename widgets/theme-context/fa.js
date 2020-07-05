@@ -5,6 +5,7 @@ import {library} from '@fortawesome/fontawesome-svg-core';
 
 /* B */
 import {faBeer as faBeerSolid} from '@fortawesome/pro-solid-svg-icons/faBeer';
+import {faBinoculars as faBinocularsSolid} from '@fortawesome/pro-solid-svg-icons/faBinoculars';
 import {faBug as faBugSolid} from '@fortawesome/pro-solid-svg-icons/faBug';
 
 /* C */
@@ -129,6 +130,7 @@ import {faWindowRestore as faWindowRestoreRegular} from '@fortawesome/pro-regula
 function boot() {
   library.add(
     faBeerSolid,
+    faBinocularsSolid,
     faBugSolid,
 
     faCalendarRegular,
