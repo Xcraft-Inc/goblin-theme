@@ -57,7 +57,8 @@ class CompositionsSelectorNC extends Widget {
     return Array.from(this.props.themes.keys())
       .filter((key) => {
         const theme = this.props.themes.get(key);
-        const egg = theme.get('meta.egg', false);
+        const meta = theme.get('meta', null);
+        const egg = meta ? meta.get('egg', false) : false;
         return !egg || this.props.accessToEggsThemes;
       })
       .map((key, index) => this.renderTheme(key, index));
