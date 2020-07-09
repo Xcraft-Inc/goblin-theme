@@ -21,18 +21,6 @@ class SettingsList extends Widget {
     super(...arguments);
   }
 
-  valueToSlider(value) {
-    const s = this.props.min;
-    const d = this.props.max - this.props.min;
-    return ((value - s) / d) * 100;
-  }
-
-  sliderToValue(value) {
-    const s = this.props.min;
-    const d = this.props.max - this.props.min;
-    return s + (value / 100) * d;
-  }
-
   renderItem(value) {
     return (
       <Checkbox
@@ -58,10 +46,14 @@ class SettingsList extends Widget {
         <Slider
           width="150px"
           direction="horizontal"
-          value={this.valueToSlider(this.props.value)}
+          min={this.props.min}
+          max={this.props.max}
+          step={this.props.step}
+          value={this.props.value}
+          displayValue="dragging"
           changeMode="throttled"
           throttleDelay={50}
-          onChange={(value) => this.props.onChange(this.sliderToValue(value))}
+          onChange={(value) => this.props.onChange(value)}
         />
       </Container>
     );
@@ -100,6 +92,7 @@ class CompositionSamplesNC extends Widget {
             list={[0.5, 0.75, 1, 1.2, 1.5, 2]}
             min={0.5}
             max={2}
+            step={0.05}
             value={this.scale}
             onChange={(value) => (this.scale = value)}
           />
