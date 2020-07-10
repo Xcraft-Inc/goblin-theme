@@ -70,6 +70,7 @@ import {faMinusCircle as faMinusCircleSolid} from '@fortawesome/pro-solid-svg-ic
 import {faMinusCircle as faMinusCircleRegular} from '@fortawesome/pro-regular-svg-icons/faMinusCircle';
 import {faMinusSquare as faMinusSquareSolid} from '@fortawesome/pro-solid-svg-icons/faMinusSquare';
 import {faMinusSquare as faMinusSquareRegular} from '@fortawesome/pro-regular-svg-icons/faMinusSquare';
+import {faMoon as faMoonSolid} from '@fortawesome/pro-solid-svg-icons/faMoon';
 import {faMusic as faMusicSolid} from '@fortawesome/pro-solid-svg-icons/faMusic';
 
 /* O */
@@ -185,6 +186,7 @@ function boot() {
     faMinusCircleRegular,
     faMinusSquareSolid,
     faMinusSquareRegular,
+    faMoonSolid,
     faMusicSolid,
 
     faPaletteRegular,
