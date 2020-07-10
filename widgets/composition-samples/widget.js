@@ -513,6 +513,7 @@ class CompositionSamplesNC extends Widget {
       display: 'flex',
       transform: `scale(${this.scale})`,
       transformOrigin: 'top left',
+      overflow: 'hidden',
     };
 
     return (
@@ -522,15 +523,17 @@ class CompositionSamplesNC extends Widget {
         </Container>
         <div className={this.styles.classNames.panes}>
           {this.renderScale()}
-          <Frame
-            style={style}
-            labId={this.context.labId}
-            store={this.context.store}
-            currentTheme={this.props.composition}
-            themeContext={this.props.themeContext}
-          >
-            {this.renderSamples()}
-          </Frame>
+          <div className={this.styles.classNames.scroll}>
+            <Frame
+              style={style}
+              labId={this.context.labId}
+              store={this.context.store}
+              currentTheme={this.props.composition}
+              themeContext={this.props.themeContext}
+            >
+              {this.renderSamples()}
+            </Frame>
+          </div>
         </div>
       </div>
     );

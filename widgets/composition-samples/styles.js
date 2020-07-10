@@ -17,6 +17,13 @@ export default function styles(theme) {
     padding: '0px ' + m + ' 0px ' + m,
   };
 
+  const scroll = {
+    display: 'flex',
+    flexDirection: 'column',
+    flexGrow: 1,
+    overflow: 'auto',
+  };
+
   const tabsButton = {
     display: 'flex',
     flexDirection: 'row',
@@ -38,6 +45,7 @@ export default function styles(theme) {
   return {
     compositionSamples,
     panes,
+    scroll,
     tabsButton,
     samplesRoot,
     samples,
