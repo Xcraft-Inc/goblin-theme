@@ -13,6 +13,7 @@ import Gauge from 'gadgets/gauge/widget';
 import Slider from 'gadgets/slider/widget';
 import Checkbox from 'gadgets/checkbox/widget';
 import Frame from 'goblin-laboratory/widgets/frame/widget';
+import * as styles from './styles';
 
 /******************************************************************************/
 
@@ -65,6 +66,7 @@ class SettingsList extends Widget {
 class CompositionSamplesNC extends Widget {
   constructor() {
     super(...arguments);
+    this.styles = styles;
 
     this.state = {
       scale: 1,
@@ -121,6 +123,14 @@ class CompositionSamplesNC extends Widget {
         <Separator kind="exact" height="10px" />
 
         <Container kind="row">
+          <CheckboxNC text="Supprimer les fichiers associés" checked={false} />
+          <Label width="10px" />
+          <CheckboxNC text="J'ai lu et j'accepte" checked={true} />
+        </Container>
+
+        <Separator kind="exact" height="10px" />
+
+        <Container kind="row">
           <Button
             kind="action"
             width="150px"
@@ -142,14 +152,6 @@ class CompositionSamplesNC extends Widget {
             glyph="solid/times"
             text="Annuler"
           />
-        </Container>
-
-        <Separator kind="exact" height="10px" />
-
-        <Container kind="row">
-          <CheckboxNC text="Supprimer les fichiers associés" checked={false} />
-          <Label width="10px" />
-          <CheckboxNC text="J'ai lu et j'accepte" checked={true} />
         </Container>
       </Container>
     );
@@ -373,47 +375,164 @@ class CompositionSamplesNC extends Widget {
     );
   }
 
+  renderContent() {
+    return (
+      <Container kind="view">
+        <Container kind="pane-header">
+          <Label text="Chavalier Bragon" kind="pane-header" />
+        </Container>
+        <Container kind="panes">
+          <Container kind="pane">
+            {this.renderFields()}
+            <Separator kind="exact" height="10px" />
+            {this.renderTables()}
+            <Separator kind="exact" height="10px" />
+            {this.renderTickets()}
+            <Separator kind="exact" height="10px" />
+            {this.renderGauges()}
+            <Separator kind="exact" height="10px" />
+            {this.renderSliders()}
+            <Separator kind="exact" height="10px" />
+            {this.renderButtons()}
+          </Container>
+        </Container>
+      </Container>
+    );
+  }
+
+  renderTaskBar() {
+    return (
+      <Container kind="left-bar">
+        <Container kind="task-bar">
+          <Button
+            kind="task-logo"
+            textTransform="none"
+            glyph="light/cube"
+            text="Exemples"
+          />
+          <Button kind="task-bar" glyph="solid/car" text="Lundi" />
+          <Button kind="task-bar" glyph="solid/bicycle" text="Mardi" />
+          <Button kind="task-bar" glyph="solid/truck" text="Mercredi" />
+          <Button kind="task-bar" glyph="solid/train" text="Jeudi" />
+          <Button kind="task-bar" glyph="solid/rocket" text="Vendredi" />
+          <Button kind="task-bar" glyph="solid/plane" text="Samedi" />
+          <Button kind="task-bar" glyph="regular/sun" text="Dimanche" />
+        </Container>
+      </Container>
+    );
+  }
+
+  renderTopBar() {
+    return (
+      <Container kind="top-bar">
+        <Button kind="main-tab" text="Clients" active={true} />
+        <Button kind="main-tab" text="Produits" />
+        <Button kind="main-tab" text="Factures" />
+      </Container>
+    );
+  }
+
+  renderTabsButton(glyph, text, tabIsActive) {
+    return (
+      <div className={this.styles.classNames.tabsButton}>
+        <Button
+          kind="view-tab-first"
+          glyph={glyph}
+          text={text}
+          active={tabIsActive}
+        />
+        <Button kind="view-tab-last" glyph="solid/times" active={tabIsActive} />
+      </div>
+    );
+  }
+
+  renderTabs() {
+    return (
+      <Container kind="second-bar">
+        <Container kind="view-tab">
+          {this.renderTabsButton('solid/search', 'Recherche', false)}
+          {this.renderTabsButton('solid/pen', 'Chevalier Bragon', true)}
+          {this.renderTabsButton('solid/pen', 'Princesse Mara', false)}
+        </Container>
+        <Container kind="view-tab-right">
+          <Button
+            text="Notifications"
+            glyph="solid/bell"
+            glyphPosition="right"
+            kind="view-tab-right"
+            badgeValue={2}
+          />
+        </Container>
+      </Container>
+    );
+  }
+
+  renderSamples() {
+    return (
+      <Container kind="root-sample">
+        <div className={this.styles.classNames.samples}>
+          {this.renderTaskBar()}
+          <Container kind="right">
+            <Container kind="content">
+              {this.renderTopBar()}
+              {this.renderTabs()}
+              {this.renderContent()}
+            </Container>
+          </Container>
+        </div>
+      </Container>
+    );
+  }
+
+  // TODO: With <div className={this.styles.classNames.samplesRoot}>,
+  // the color theme.palette.rootBackground is not according to theme!
+  renderSamples_BUG() {
+    return (
+      <div className={this.styles.classNames.samplesRoot}>
+        <div className={this.styles.classNames.samples}>
+          {this.renderTaskBar()}
+          <Container kind="right">
+            <Container kind="content">
+              {this.renderTopBar()}
+              {this.renderTabs()}
+              {this.renderContent()}
+            </Container>
+          </Container>
+        </div>
+      </div>
+    );
+  }
+
   render() {
     if (!this.props.composition) {
       return null;
     }
 
     const style = {
+      flexGrow: 1,
+      display: 'flex',
       transform: `scale(${this.scale})`,
       transformOrigin: 'top left',
     };
 
     return (
-      <Container kind="view" grow="1">
+      <div className={this.styles.classNames.compositionSamples}>
         <Container kind="pane-header">
           <Label text="Exemples" kind="pane-header" />
         </Container>
-        <Container kind="panes">
+        <div className={this.styles.classNames.panes}>
           {this.renderScale()}
-          <div style={style}>
-            <Frame
-              labId={this.context.labId}
-              store={this.context.store}
-              currentTheme={this.props.composition}
-              themeContext={this.props.themeContext}
-            >
-              <Container kind="pane">
-                {this.renderButtons()}
-                <Separator kind="exact" height="10px" />
-                {this.renderFields()}
-                <Separator kind="exact" height="10px" />
-                {this.renderTables()}
-                <Separator kind="exact" height="10px" />
-                {this.renderTickets()}
-                <Separator kind="exact" height="10px" />
-                {this.renderGauges()}
-                <Separator kind="exact" height="10px" />
-                {this.renderSliders()}
-              </Container>
-            </Frame>
-          </div>
-        </Container>
-      </Container>
+          <Frame
+            style={style}
+            labId={this.context.labId}
+            store={this.context.store}
+            currentTheme={this.props.composition}
+            themeContext={this.props.themeContext}
+          >
+            {this.renderSamples()}
+          </Frame>
+        </div>
+      </div>
     );
   }
 }
