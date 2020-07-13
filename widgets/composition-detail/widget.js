@@ -5,35 +5,17 @@ import WithModel from 'goblin-laboratory/widgets/with-model/widget';
 import Container from 'gadgets/container/widget';
 import Label from 'gadgets/label/widget';
 import Field from 'gadgets/field/widget';
-
+import colorsProps from '../../lib/themes/colors/props.js';
+import looksProps from '../../lib/themes/looks/props.js';
+import spacingsProps from '../../lib/themes/spacings/props.js';
+import timingProps from '../../lib/themes/timings/props.js';
+const properties = {
+  ...colorsProps,
+  ...looksProps,
+  ...spacingsProps,
+  ...timingProps,
+};
 /******************************************************************************/
-
-function getFieldType(type) {
-  switch (type) {
-    case 'string':
-    case 'number':
-    case 'color':
-      return type;
-    default:
-      null;
-  }
-}
-
-function getFieldKind(theme, cat, prop) {
-  let valueType;
-
-  if (cat === 'colors') {
-    if (prop === 'isDarkTheme') {
-      return 'bool';
-    }
-    valueType = 'color';
-  } else {
-    const value = theme.get(`${cat}.${prop}`, null);
-    valueType = typeof value;
-  }
-
-  return getFieldType(valueType);
-}
 
 function compareStrings(s1, s2) {
   if (s1 < s2) {
@@ -45,9 +27,9 @@ function compareStrings(s1, s2) {
   return 0;
 }
 
-function compareProps(theme, cat, p1, p2) {
-  const k1 = getFieldKind(theme, cat, p1);
-  const k2 = getFieldKind(theme, cat, p2);
+function compareProps(p1, p2) {
+  const k1 = properties[p1] ? properties[p1].kind : '';
+  const k2 = properties[p2] ? properties[p2].kind : '';
 
   const r = compareStrings(k1, k2);
   if (r !== 0) {
@@ -74,25 +56,33 @@ class CompositionDetailNC extends Widget {
         this.props.composition === this.context.theme.name;
 
       return Array.from(props.keys())
-        .sort((p1, p2) => compareProps(theme, cat, p1, p2))
+        .sort((p1, p2) => compareProps(p1, p2))
         .map((prop, index) => {
-          const kind = getFieldKind(theme, cat, prop);
-          if (!kind) {
+          const value = theme.get(`${cat}.${prop}`);
+          if (typeof value === 'object') {
             return null;
           }
+          const fieldProperties = properties[prop];
+          if (!fieldProperties) {
+            return null;
+          }
+
           return (
             <Container key={index} kind="row">
               <Field
-                kind={kind}
                 changeComboMode={editCurrentTheme ? 'whenClosed' : null}
                 labelWidth="200px"
                 labelText={prop}
                 model={`.${cat}.${prop}`}
+                {...fieldProperties}
               />
             </Container>
           );
         });
     } else {
+      if (typeof theme.get(cat) !== 'string') {
+        return null;
+      }
       return (
         <Container kind="row">
           <Field
