@@ -7,6 +7,28 @@ import * as styles from './styles';
 
 /******************************************************************************/
 
+function compareStrings(s1, s2) {
+  if (s1 < s2) {
+    return -1;
+  }
+  if (s1 > s2) {
+    return 1;
+  }
+  return 0;
+}
+
+function compareThemes(t1, t2) {
+  if (!t1.egg && t2.egg) {
+    return -1;
+  } else if (t1.egg && !t2.egg) {
+    return 1;
+  }
+
+  return compareStrings(t1.displayName, t2.displayName);
+}
+
+/******************************************************************************/
+
 class CompositionsSelectorNC extends Widget {
   constructor() {
     super(...arguments);
@@ -32,22 +54,20 @@ class CompositionsSelectorNC extends Widget {
 
   /******************************************************************************/
 
-  renderTheme(key, index) {
-    const theme = this.props.themes.get(key);
-    const name = theme.get('name');
-    const active = key === this.props.currentComposition;
+  renderTheme(theme, index) {
+    const active = theme.key === this.props.currentComposition;
 
     return (
       <Button
         key={index}
         kind="menu-item"
-        text={name}
+        text={theme.displayName}
         glyph={active ? 'solid/chevron-right' : 'solid/none'}
         glyphPosition="right"
         justify="between"
         textTransform="none"
         grow="1"
-        onClick={() => this.select(key)}
+        onClick={() => this.select(theme.key)}
         active={active}
       />
     );
@@ -55,13 +75,18 @@ class CompositionsSelectorNC extends Widget {
 
   renderThemes() {
     return Array.from(this.props.themes.keys())
-      .filter((key) => {
+      .map((key) => {
         const theme = this.props.themes.get(key);
+        const displayName = theme.get('displayName');
         const meta = theme.get('meta', null);
         const egg = meta ? meta.get('egg', false) : false;
-        return !egg || this.props.accessToEggsThemes;
+        return {key, displayName, egg};
       })
-      .map((key, index) => this.renderTheme(key, index));
+      .filter((t) => {
+        return !t.egg || this.props.accessToEggsThemes;
+      })
+      .sort((t1, t2) => compareThemes(t1, t2))
+      .map((t, index) => this.renderTheme(t, index));
   }
 
   renderEggsButton() {
