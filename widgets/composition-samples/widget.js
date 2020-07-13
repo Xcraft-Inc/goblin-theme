@@ -379,7 +379,7 @@ class CompositionSamplesNC extends Widget {
     return (
       <Container kind="view">
         <Container kind="pane-header">
-          <Label text="Chavalier Bragon" kind="pane-header" />
+          <Label text="Chevalier Bragon" kind="pane-header" />
         </Container>
         <Container kind="panes">
           <Container kind="pane">
