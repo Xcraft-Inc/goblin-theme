@@ -70,6 +70,9 @@ class CompositionDetailNC extends Widget {
     }
 
     if (typeof props === 'object') {
+      const editCurrentTheme =
+        this.props.composition === this.context.theme.name;
+
       return Array.from(props.keys())
         .sort((p1, p2) => compareProps(theme, cat, p1, p2))
         .map((prop, index) => {
@@ -81,7 +84,7 @@ class CompositionDetailNC extends Widget {
             <Container key={index} kind="row">
               <Field
                 kind={kind}
-                changeComboMode="whenClosed"
+                changeComboMode={editCurrentTheme ? 'whenClosed' : null}
                 labelWidth="200px"
                 labelText={prop}
                 model={`.${cat}.${prop}`}
