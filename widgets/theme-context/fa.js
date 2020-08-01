@@ -123,7 +123,6 @@ import {faTrashAlt as faTrashAltRegular} from '@fortawesome/pro-regular-svg-icon
 /* U */
 import {faUndo as faUndoSolid} from '@fortawesome/pro-solid-svg-icons/faUndo';
 import {faUpload as faUploadSolid} from '@fortawesome/pro-solid-svg-icons/faUpload';
-import {faUsersClass as faUsersClassLight} from '@fortawesome/pro-light-svg-icons/faUsersClass';
 
 /* V */
 import {faVial as faVialSolid} from '@fortawesome/pro-solid-svg-icons/faVial';
@@ -235,7 +234,6 @@ function boot() {
 
     faUndoSolid,
     faUploadSolid,
-    faUsersClassLight,
 
     faVialSolid,
 
