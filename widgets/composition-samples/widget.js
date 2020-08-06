@@ -340,14 +340,14 @@ class CompositionSamplesNC extends Widget {
           <Slider
             direction="horizontal"
             width="150px"
-            colorBar="#f00"
+            barColor="#f00"
             value={25}
           />
           <Label width="10px" />
           <Slider
             direction="horizontal"
             width="150px"
-            colorBar="#0f0"
+            barColor="#0f0"
             value={75}
           />
           <Label width="10px" />
