@@ -2,6 +2,7 @@
 import {library} from '@fortawesome/fontawesome-svg-core';
 
 /* A */
+import {faArrowsH as faArrowsHSolid} from '@fortawesome/pro-solid-svg-icons/faArrowsH';
 
 /* B */
 import {faBeer as faBeerSolid} from '@fortawesome/pro-solid-svg-icons/faBeer';
@@ -134,6 +135,8 @@ import {faWindowRestore as faWindowRestoreRegular} from '@fortawesome/pro-regula
 
 function boot() {
   library.add(
+    faArrowsHSolid,
+
     faBeerSolid,
     faBinocularsSolid,
     faBugSolid,
