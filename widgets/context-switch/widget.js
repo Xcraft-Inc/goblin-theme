@@ -1,8 +1,8 @@
 import React from 'react';
 import Widget from 'goblin-laboratory/widgets/widget';
-import Button from 'gadgets/button/widget';
-import Container from 'gadgets/container/widget';
-import Label from 'gadgets/label/widget';
+import Button from 'goblin-gadgets/widgets/button/widget';
+import Container from 'goblin-gadgets/widgets/container/widget';
+import Label from 'goblin-gadgets/widgets/label/widget';
 
 /******************************************************************************/
 

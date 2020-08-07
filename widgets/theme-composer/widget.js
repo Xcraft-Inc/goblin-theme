@@ -1,6 +1,6 @@
 import React from 'react';
 import Widget from 'goblin-laboratory/widgets/widget';
-import Container from 'gadgets/container/widget';
+import Container from 'goblin-gadgets/widgets/container/widget';
 import CompositionSelector from '../composition-selector/widget';
 import CompositionDetail from '../composition-detail/widget';
 import CompositionSamples from '../composition-samples/widget';

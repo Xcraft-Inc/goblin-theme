@@ -1,7 +1,7 @@
 import React from 'react';
 import Widget from 'goblin-laboratory/widgets/widget';
 import ThemeComposer from '../theme-composer/widget.js';
-import Container from 'gadgets/container/widget';
+import Container from 'goblin-gadgets/widgets/container/widget';
 import ContextSwitch from '../context-switch/widget.js';
 
 /******************************************************************************/
