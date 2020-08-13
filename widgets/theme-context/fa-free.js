@@ -54,7 +54,7 @@ import {faCaretDown as faCaretDownSolid} from '@fortawesome/free-solid-svg-icons
 import {faCaretUp as faCaretUpSolid} from '@fortawesome/free-solid-svg-icons/faCaretUp';
 import {faCartPlus as faCartPlusSolid} from '@fortawesome/free-solid-svg-icons/faCartPlus';
 import {faCreditCard as faCreditCardRegular} from '@fortawesome/free-regular-svg-icons/faCreditCard';
-import {faCreditCardBlank as faCreditCardBlankRegular} from '@fortawesome/free-solid-svg-icons/faCreditCardBlank';
+import {faCreditCardBlank as faCreditCardBlankRegular} from '@fortawesome/free-solid-svg-icons/faCreditCard';
 import {faCertificate as faCertificateSolid} from '@fortawesome/free-solid-svg-icons/faCertificate';
 import {faChartBar as faChartBarSolid} from '@fortawesome/free-solid-svg-icons/faChartBar';
 import {faChartLine as faChartLineSolid} from '@fortawesome/free-solid-svg-icons/faChartLine';
@@ -199,7 +199,7 @@ import {faQuestionCircle as faQuestionCircleSolid} from '@fortawesome/free-solid
 
 /* R */
 import {faRandom as faRandomSolid} from '@fortawesome/free-solid-svg-icons/faRandom';
-import {faRectangleLandscape as faRectangleLandscapeRegular} from '@fortawesome/free-solid-svg-icons/faRectangleLandscape';
+import {faRectangleLandscape as faRectangleLandscapeRegular} from '@fortawesome/free-solid-svg-icons/faImage';
 import {faRocket as faRocketSolid} from '@fortawesome/free-solid-svg-icons/faRocket';
 import {faRocket as faRocketLight} from '@fortawesome/free-solid-svg-icons/faRocket';
 
@@ -240,7 +240,7 @@ import {faThLarge as faThLargeSolid} from '@fortawesome/free-solid-svg-icons/faT
 import {faTimes as faTimesSolid} from '@fortawesome/free-solid-svg-icons/faTimes';
 import {faTimes as faTimesLight} from '@fortawesome/free-solid-svg-icons/faTimes';
 import {faTimesCircle as faTimesCircleSolid} from '@fortawesome/free-solid-svg-icons/faTimesCircle';
-import {faTimesSquare as faTimesSquareRegular} from '@fortawesome/free-solid-svg-icons/faTimesSquare';
+import {faTimesSquare as faTimesSquareRegular} from '@fortawesome/free-solid-svg-icons/faWindowClose';
 import {faTint as faTintRegular} from '@fortawesome/free-solid-svg-icons/faTint';
 import {faTint as faTintSolid} from '@fortawesome/free-solid-svg-icons/faTint';
 import {faToggleOff as faToggleOffLight} from '@fortawesome/free-solid-svg-icons/faToggleOff';
