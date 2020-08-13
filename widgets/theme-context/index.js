@@ -1,4 +1,4 @@
-import Fa from './fa.js';
+import Fa from './fa-free.js';
 
 import LatoRegularWoff from './fonts/lato-v14-latin-regular.woff';
 import LatoRegularWoff2 from './fonts/lato-v14-latin-regular.woff2';
