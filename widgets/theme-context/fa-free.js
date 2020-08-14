@@ -2,7 +2,6 @@ import {library} from '@fortawesome/fontawesome-svg-core';
 
 /* A */
 import {faArrowsAltH as faArrowsAltHSolid} from '@fortawesome/free-solid-svg-icons/faArrowsAltH';
-faArrowsAltHSolid.prefix = 'fas';
 faArrowsAltHSolid.iconName = 'arrows-h';
 /* B */
 import {faBeer as faBeerSolid} from '@fortawesome/free-solid-svg-icons/faBeer';
@@ -22,10 +21,11 @@ import {faCheckSquare as faCheckSquareRegular} from '@fortawesome/free-regular-s
 import {faCheckSquare as faCheckSquareSolid} from '@fortawesome/free-solid-svg-icons/faCheckSquare';
 import {faChevronLeft as faChevronLeftSolid} from '@fortawesome/free-solid-svg-icons/faChevronLeft';
 import {faChevronRight as faChevronRightSolid} from '@fortawesome/free-solid-svg-icons/faChevronRight';
+
 import {faChevronUp as faChevronUpSolid} from '@fortawesome/free-solid-svg-icons/faChevronUp';
-//import {faChevronDoubleUp as faChevronDoubleUpSolid} from '@fortawesome/free-solid-svg-icons/faChevronDoubleUp';
+
 import {faChevronDown as faChevronDownSolid} from '@fortawesome/free-solid-svg-icons/faChevronDown';
-//import {faChevronDoubleDown as faChevronDoubleDownSolid} from '@fortawesome/free-solid-svg-icons/faChevronDoubleDown';
+
 import {faCircle as faCircleRegular} from '@fortawesome/free-regular-svg-icons/faCircle';
 import {faCircle as faCircleSolid} from '@fortawesome/free-solid-svg-icons/faCircle';
 import {faColumns as faColumnsSolid} from '@fortawesome/free-solid-svg-icons/faColumns';
@@ -62,9 +62,6 @@ import {faHome as faHomeSolid} from '@fortawesome/free-solid-svg-icons/faHome';
 /* I */
 import {faIndustry as faIndustrySolid} from '@fortawesome/free-solid-svg-icons/faIndustry';
 
-/* J */
-//import {faJackOLantern as faJackOLanternSolid} from '@fortawesome/free-solid-svg-icons/faJackOLantern';
-
 /* L */
 import {faLanguage as faLanguageSolid} from '@fortawesome/free-solid-svg-icons/faLanguage';
 import {faLeaf as faLeafSolid} from '@fortawesome/free-solid-svg-icons/faLeaf';
@@ -72,7 +69,11 @@ import {faLeaf as faLeafSolid} from '@fortawesome/free-solid-svg-icons/faLeaf';
 /* M */
 import {faMinus as faMinusSolid} from '@fortawesome/free-solid-svg-icons/faMinus';
 import {faMinusCircle as faMinusCircleSolid} from '@fortawesome/free-solid-svg-icons/faMinusCircle';
+
 //import {faMinusCircle as faMinusCircleRegular} from '@fortawesome/free-regular-svg-icons/faMinusCircle';
+import {faMinusCircle as faMinusCircleRegular} from '@fortawesome/free-solid-svg-icons/faMinusCircle';
+faMinusCircleRegular.prefix = 'far';
+
 import {faMinusSquare as faMinusSquareSolid} from '@fortawesome/free-solid-svg-icons/faMinusSquare';
 import {faMinusSquare as faMinusSquareRegular} from '@fortawesome/free-regular-svg-icons/faMinusSquare';
 import {faMoon as faMoonSolid} from '@fortawesome/free-solid-svg-icons/faMoon';
@@ -81,7 +82,6 @@ import {faMusic as faMusicSolid} from '@fortawesome/free-solid-svg-icons/faMusic
 /* O */
 
 /* P */
-//import {faPalette as faPaletteRegular} from '@fortawesome/free-regular-svg-icons/faPalette';
 import {faPalette as faPaletteSolid} from '@fortawesome/free-solid-svg-icons/faPalette';
 import {faPen as faPenSolid} from '@fortawesome/free-solid-svg-icons/faPen';
 import {faPlay as faPlaySolid} from '@fortawesome/free-solid-svg-icons/faPlay';
@@ -96,17 +96,30 @@ import {faPrint as faPrintSolid} from '@fortawesome/free-solid-svg-icons/faPrint
 
 /* R */
 //import {faRadar as faRadarLight} from '@fortawesome/free-light-svg-icons/faRadar';
-
+import {faSatelliteDish as faSatelliteDishSolid} from '@fortawesome/free-solid-svg-icons/faSatelliteDish';
+faSatelliteDishSolid.prefix = 'fal';
+faSatelliteDishSolid.iconName = 'radar';
 /* S */
 import {faSearch as faSearchSolid} from '@fortawesome/free-solid-svg-icons/faSearch';
 import {faSearchMinus as faSearchMinusSolid} from '@fortawesome/free-solid-svg-icons/faSearchMinus';
 import {faSearchPlus as faSearchPlusSolid} from '@fortawesome/free-solid-svg-icons/faSearchPlus';
+
 //import {faSearchPlus as faSearchPlusLight} from '@fortawesome/free-light-svg-icons/faSearchPlus';
+import {faSearchPlus as faSearchPlusLight} from '@fortawesome/free-solid-svg-icons/faSearchPlus';
+faSearchPlusLight.prefix = 'fal';
+
 //import {faShieldCheck as faShieldCheckSolid} from '@fortawesome/free-solid-svg-icons/faShieldCheck';
+import {faShieldAlt as faShieldAltSolid} from '@fortawesome/free-solid-svg-icons/faShieldAlt';
+faShieldAltSolid.iconName = 'shield-check';
+
 import {faShower as faShowerSolid} from '@fortawesome/free-solid-svg-icons/faShower';
 import {faSlidersH as faSlidersHSolid} from '@fortawesome/free-solid-svg-icons/faSlidersH';
 import {faSpinner as faSpinnerSolid} from '@fortawesome/free-solid-svg-icons/faSpinner';
+
 //import {faSquare as faSquareLight} from '@fortawesome/free-light-svg-icons/faSquare';
+import {faSquare as faSquareLight} from '@fortawesome/free-regular-svg-icons/faSquare';
+faSquareLight.prefix = 'fal';
+
 import {faSquare as faSquareRegular} from '@fortawesome/free-regular-svg-icons/faSquare';
 import {faSquare as faSquareSolid} from '@fortawesome/free-solid-svg-icons/faSquare';
 import {faStop as faStopSolid} from '@fortawesome/free-solid-svg-icons/faStop';
@@ -114,13 +127,27 @@ import {faSun as faSunSolid} from '@fortawesome/free-solid-svg-icons/faSun';
 
 /* T */
 //import {faTachometer as faTachometerSolid} from '@fortawesome/free-solid-svg-icons/faTachometer';
+import {faTachometerAlt as faTachometerAltSolid} from '@fortawesome/free-solid-svg-icons/faTachometerAlt';
+faTachometerAltSolid.iconName = 'tachometer';
+
 import {faTimes as faTimesSolid} from '@fortawesome/free-solid-svg-icons/faTimes';
 import {faTimesCircle as faTimesCircleSolid} from '@fortawesome/free-solid-svg-icons/faTimesCircle';
 //import {faTimesSquare as faTimesSquareSolid} from '@fortawesome/free-solid-svg-icons/faTimesSquare';
+import {faWindowClose as faWindowCloseSolid} from '@fortawesome/free-solid-svg-icons/faWindowClose';
+faWindowCloseSolid.iconName = 'times-square';
 //import {faTimesSquare as faTimesSquareRegular} from '@fortawesome/free-regular-svg-icons/faTimesSquare';
-//import {faToggleOff as faToggleOffLight} from '@fortawesome/free-light-svg-icons/faToggleOff';
-//import {faToggleOn as faToggleOnLight} from '@fortawesome/free-light-svg-icons/faToggleOn';
+import {faWindowClose as faWindowCloseRegular} from '@fortawesome/free-regular-svg-icons/faWindowClose';
+faWindowCloseRegular.iconName = 'times-square';
+
+import {faToggleOff as faToggleOffLight} from '@fortawesome/free-solid-svg-icons/faToggleOff';
+faToggleOffLight.prefix = 'fal';
+import {faToggleOn as faToggleOnLight} from '@fortawesome/free-solid-svg-icons/faToggleOn';
+faToggleOnLight.prefix = 'fal';
+
 //import {faTrash as faTrashRegular} from '@fortawesome/free-regular-svg-icons/faTrash';
+import {faTrash as faTrashRegular} from '@fortawesome/free-solid-svg-icons/faTrash';
+faTrashRegular.prefix = 'far';
+
 import {faTrash as faTrashSolid} from '@fortawesome/free-solid-svg-icons/faTrash';
 import {faTrashAlt as faTrashAltSolid} from '@fortawesome/free-solid-svg-icons/faTrashAlt';
 import {faTrashAlt as faTrashAltRegular} from '@fortawesome/free-regular-svg-icons/faTrashAlt';
@@ -158,9 +185,7 @@ function boot() {
     faChevronLeftSolid,
     faChevronRightSolid,
     faChevronUpSolid,
-    //faChevronDoubleUpSolid,
     faChevronDownSolid,
-    //faChevronDoubleDownSolid,
     faCircleRegular,
     faCircleSolid,
     faColumnsSolid,
@@ -186,55 +211,52 @@ function boot() {
 
     faIndustrySolid,
 
-    //faJackOLanternSolid,
-
     faLanguageSolid,
 
     faLeafSolid,
 
     faMinusSolid,
     faMinusCircleSolid,
-    //faMinusCircleRegular,
+    faMinusCircleRegular,
     faMinusSquareSolid,
     faMinusSquareRegular,
     faMoonSolid,
     faMusicSolid,
 
-    //faPaletteRegular,
     faPaletteSolid,
     faPenSolid,
     faPlaySolid,
     faPlusSolid,
     faPlusCircleSolid,
-    //faPlusCircleRegular,
+
     faPlusSquareSolid,
     faPlusSquareRegular,
     faPrintSolid,
 
-    //faRadarLight,
+    faSatelliteDishSolid,
 
     faSearchSolid,
     faSearchMinusSolid,
     faSearchPlusSolid,
-    //faSearchPlusLight,
-    //faShieldCheckSolid,
+    faSearchPlusLight,
+    faShieldAltSolid,
     faShowerSolid,
     faSlidersHSolid,
     faSpinnerSolid,
-    //faSquareLight,
+    faSquareLight,
     faSquareRegular,
     faSquareSolid,
     faStopSolid,
     faSunSolid,
 
-    //faTachometerSolid,
+    faTachometerAltSolid,
     faTimesSolid,
     faTimesCircleSolid,
-    //faTimesSquareSolid,
-    //faTimesSquareRegular,
-    //faToggleOffLight,
-    //faToggleOnLight,
-    //faTrashRegular,
+    faWindowCloseSolid,
+    faWindowCloseRegular,
+    faToggleOffLight,
+    faToggleOnLight,
+    faTrashRegular,
     faTrashSolid,
     faTrashAltSolid,
     faTrashAltRegular,
