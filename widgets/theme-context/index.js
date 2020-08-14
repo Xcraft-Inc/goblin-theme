@@ -11,7 +11,7 @@ try {
 
 let Fa;
 if (proAvailable) {
-  Fa = require('./fa-free.js').default;
+  Fa = require('./fa-pro.js').default;
 } else {
   Fa = require('./fa-free.js').default;
 }
