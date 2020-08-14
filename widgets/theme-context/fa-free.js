@@ -40,7 +40,7 @@ import {faBookmark as faBookmarkRegular} from '@fortawesome/free-regular-svg-ico
 import {faBookmark as faBookmarkSolid} from '@fortawesome/free-solid-svg-icons/faBookmark';
 import {faBuilding as faBuildingSolid} from '@fortawesome/free-solid-svg-icons/faBuilding';
 import {faBullhorn as faBullhornSolid} from '@fortawesome/free-solid-svg-icons/faBullhorn';
-import {faBoxFull as faBoxFullSolid} from '@fortawesome/free-solid-svg-icons/faBoxOpen';
+//import {faBoxFull as faBoxFullSolid} from '@fortawesome/free-solid-svg-icons/faBoxOpen';
 
 /* C */
 import {faCalendar as faCalendarSolid} from '@fortawesome/free-solid-svg-icons/faCalendar';
@@ -108,7 +108,7 @@ import {faEllipsisV as faEllipsisVSolid} from '@fortawesome/free-solid-svg-icons
 import {faEnvelope as faEnvelopeRegular} from '@fortawesome/free-regular-svg-icons/faEnvelope';
 import {faEnvelope as faEnvelopeSolid} from '@fortawesome/free-solid-svg-icons/faEnvelope';
 import {faEraser as faEraserSolid} from '@fortawesome/free-solid-svg-icons/faEraser';
-import {faExchange as faExchangeSolid} from '@fortawesome/free-solid-svg-icons/faExchangeAlt';
+//import {faExchange as faExchangeSolid} from '@fortawesome/free-solid-svg-icons/faExchangeAlt';
 import {faExclamationCircle as faExclamationCircleSolid} from '@fortawesome/free-solid-svg-icons/faExclamationCircle';
 import {faExclamationTriangle as faExclamationTriangleSolid} from '@fortawesome/free-solid-svg-icons/faExclamationTriangle';
 import {faExpand as faExpandSolid} from '@fortawesome/free-solid-svg-icons/faExpand';
@@ -140,7 +140,7 @@ import {faHandPointRight as faHandPointRightSolid} from '@fortawesome/free-solid
 import {faHashtag as faHashtagSolid} from '@fortawesome/free-solid-svg-icons/faHashtag';
 import {faHeart as faHeartRegular} from '@fortawesome/free-regular-svg-icons/faHeart';
 import {faHeart as faHeartSolid} from '@fortawesome/free-solid-svg-icons/faHeart';
-import {faHexagon as faHexagonSolid} from '@fortawesome/free-solid-svg-icons/faDiceD6';
+//import {faHexagon as faHexagonSolid} from '@fortawesome/free-solid-svg-icons/faDiceD6';
 import {faHome as faHomeSolid} from '@fortawesome/free-solid-svg-icons/faHome';
 import {faHospital as faHospitalRegular} from '@fortawesome/free-regular-svg-icons/faHospital';
 import {faHourglassStart as faHourglassStartSolid} from '@fortawesome/free-solid-svg-icons/faHourglassStart';
@@ -175,14 +175,14 @@ import {faMinusSquare as faMinusSquareRegular} from '@fortawesome/free-regular-s
 import {faMoneyBillAlt as faMoneyBillAltSolid} from '@fortawesome/free-solid-svg-icons/faMoneyBillAlt';
 
 /* O */
-import {faOctagon as faOctagonSolid} from '@fortawesome/free-solid-svg-icons/faCircle';
+//import {faOctagon as faOctagonSolid} from '@fortawesome/free-solid-svg-icons/faCircle';
 
 /* P */
 import {faPalette as faPaletteSolid} from '@fortawesome/free-solid-svg-icons/faPalette';
 import {faPaperclip as faPaperclipSolid} from '@fortawesome/free-solid-svg-icons/faPaperclip';
 import {faPaperPlane as faPaperPlaneSolid} from '@fortawesome/free-solid-svg-icons/faPaperPlane';
 import {faPaste as faPasteSolid} from '@fortawesome/free-solid-svg-icons/faPaste';
-import {faPencil as faPencilSolid} from '@fortawesome/free-solid-svg-icons/faPencilAlt';
+//import {faPencil as faPencilSolid} from '@fortawesome/free-solid-svg-icons/faPencilAlt';
 import {faPhone as faPhoneSolid} from '@fortawesome/free-solid-svg-icons/faPhone';
 import {faPlane as faPlaneSolid} from '@fortawesome/free-solid-svg-icons/faPlane';
 import {faPlay as faPlaySolid} from '@fortawesome/free-solid-svg-icons/faPlay';
@@ -199,7 +199,7 @@ import {faQuestionCircle as faQuestionCircleSolid} from '@fortawesome/free-solid
 
 /* R */
 import {faRandom as faRandomSolid} from '@fortawesome/free-solid-svg-icons/faRandom';
-import {faRectangleLandscape as faRectangleLandscapeRegular} from '@fortawesome/free-solid-svg-icons/faImage';
+//import {faRectangleLandscape as faRectangleLandscapeRegular} from '@fortawesome/free-solid-svg-icons/faImage';
 import {faRocket as faRocketSolid} from '@fortawesome/free-solid-svg-icons/faRocket';
 import {faRocket as faRocketLight} from '@fortawesome/free-solid-svg-icons/faRocket';
 
@@ -240,7 +240,7 @@ import {faThLarge as faThLargeSolid} from '@fortawesome/free-solid-svg-icons/faT
 import {faTimes as faTimesSolid} from '@fortawesome/free-solid-svg-icons/faTimes';
 import {faTimes as faTimesLight} from '@fortawesome/free-solid-svg-icons/faTimes';
 import {faTimesCircle as faTimesCircleSolid} from '@fortawesome/free-solid-svg-icons/faTimesCircle';
-import {faTimesSquare as faTimesSquareRegular} from '@fortawesome/free-solid-svg-icons/faWindowClose';
+//import {faTimesSquare as faTimesSquareRegular} from '@fortawesome/free-solid-svg-icons/faWindowClose';
 import {faTint as faTintRegular} from '@fortawesome/free-solid-svg-icons/faTint';
 import {faTint as faTintSolid} from '@fortawesome/free-solid-svg-icons/faTint';
 import {faToggleOff as faToggleOffLight} from '@fortawesome/free-solid-svg-icons/faToggleOff';
@@ -251,7 +251,7 @@ import {faTrash as faTrashSolid} from '@fortawesome/free-solid-svg-icons/faTrash
 import {faTrashAlt as faTrashAltSolid} from '@fortawesome/free-solid-svg-icons/faTrashAlt';
 import {faTrashAlt as faTrashAltRegular} from '@fortawesome/free-regular-svg-icons/faTrashAlt';
 import {faTree as faTreeSolid} from '@fortawesome/free-solid-svg-icons/faTree';
-import {faTriangle as faTriangleSolid} from '@fortawesome/free-solid-svg-icons/faCaretUp';
+//import {faTriangle as faTriangleSolid} from '@fortawesome/free-solid-svg-icons/faCaretUp';
 import {faTrophy as faTrophySolid} from '@fortawesome/free-solid-svg-icons/faTrophy';
 import {faTruck as faTruckSolid} from '@fortawesome/free-solid-svg-icons/faTruck';
 import {faTv as faTvSolid} from '@fortawesome/free-solid-svg-icons/faTv';
@@ -285,14 +285,14 @@ function boot() {
     faArrowAltCircleUpSolid,
     faArrowLeftSolid,
     faArrowRightSolid,
-    faArrowSquareRightSolid,
+    //faArrowSquareRightSolid,
     faArrowUpSolid,
     faArrowDownSolid,
     faAsteriskSolid,
     faAtSolid,
     faBackwardSolid,
-    faBadgeSolid,
-    faBadgeCheckSolid,
+    //faBadgeSolid,
+    //faBadgeCheckSolid,
     faBanSolid,
     faBarsSolid,
     faBalanceScaleSolid,
@@ -307,7 +307,7 @@ function boot() {
     faBookmarkSolid,
     faBuildingSolid,
     faBullhornSolid,
-    faBoxFullSolid,
+    //faBoxFullSolid,
     faCalendarSolid,
     faCalendarAltRegular,
     faCalendarAltSolid,
@@ -319,7 +319,7 @@ function boot() {
     faCaretUpSolid,
     faCartPlusSolid,
     faCreditCardRegular,
-    faCreditCardBlankRegular,
+    //faCreditCardBlankRegular,
     faCertificateSolid,
     faChartBarSolid,
     faChartLineSolid,
@@ -369,7 +369,7 @@ function boot() {
     faEnvelopeRegular,
     faEnvelopeSolid,
     faEraserSolid,
-    faExchangeSolid,
+    //faExchangeSolid,
     faExclamationCircleSolid,
     faExclamationTriangleSolid,
     faExpandSolid,
@@ -395,7 +395,7 @@ function boot() {
     faHashtagSolid,
     faHeartRegular,
     faHeartSolid,
-    faHexagonSolid,
+    //faHexagonSolid,
     faHomeSolid,
     faHospitalRegular,
     faHourglassStartSolid,
@@ -422,12 +422,12 @@ function boot() {
     faMinusSquareSolid,
     faMinusSquareRegular,
     faMoneyBillAltSolid,
-    faOctagonSolid,
+    //faOctagonSolid,
     faPaletteSolid,
     faPaperclipSolid,
     faPaperPlaneSolid,
     faPasteSolid,
-    faPencilSolid,
+    //faPencilSolid,
     faPhoneSolid,
     faPlaneSolid,
     faPlaySolid,
@@ -440,7 +440,7 @@ function boot() {
     faPrintSolid,
     faQuestionCircleSolid,
     faRandomSolid,
-    faRectangleLandscapeRegular,
+    //faRectangleLandscapeRegular,
     faRocketSolid,
     faRocketLight,
     faSaveSolid,
@@ -477,7 +477,7 @@ function boot() {
     faTimesSolid,
     faTimesLight,
     faTimesCircleSolid,
-    faTimesSquareRegular,
+    //faTimesSquareRegular,
     faTintRegular,
     faTintSolid,
     faToggleOffLight,
@@ -488,7 +488,7 @@ function boot() {
     faTrashAltSolid,
     faTrashAltRegular,
     faTreeSolid,
-    faTriangleSolid,
+    //faTriangleSolid,
     faTrophySolid,
     faTruckSolid,
     faTvSolid,
