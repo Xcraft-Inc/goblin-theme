@@ -115,6 +115,7 @@ import {faTimesSquare as faTimesSquareSolid} from '@fortawesome/pro-solid-svg-ic
 import {faTimesSquare as faTimesSquareRegular} from '@fortawesome/pro-regular-svg-icons/faTimesSquare';
 import {faToggleOff as faToggleOffLight} from '@fortawesome/pro-light-svg-icons/faToggleOff';
 import {faToggleOn as faToggleOnLight} from '@fortawesome/pro-light-svg-icons/faToggleOn';
+import {faTombstone as faTombstoneSolid} from '@fortawesome/pro-solid-svg-icons/faTombstone';
 import {faTrash as faTrashRegular} from '@fortawesome/pro-regular-svg-icons/faTrash';
 import {faTrash as faTrashSolid} from '@fortawesome/pro-solid-svg-icons/faTrash';
 import {faTrashAlt as faTrashAltSolid} from '@fortawesome/pro-solid-svg-icons/faTrashAlt';
@@ -229,6 +230,7 @@ function boot() {
     faTimesSquareRegular,
     faToggleOffLight,
     faToggleOnLight,
+    faTombstoneSolid,
     faTrashRegular,
     faTrashSolid,
     faTrashAltSolid,

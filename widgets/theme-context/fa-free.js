@@ -144,6 +144,9 @@ faToggleOffLight.prefix = 'fal';
 import {faToggleOn as faToggleOnLight} from '@fortawesome/free-solid-svg-icons/faToggleOn';
 faToggleOnLight.prefix = 'fal';
 
+// import {faTombstone as faTombstoneSolid} from '@fortawesome/free-solid-svg-icons/faTombstone';
+import {faTrash as faTombstoneSolid} from '@fortawesome/free-solid-svg-icons/faTrash';
+
 //import {faTrash as faTrashRegular} from '@fortawesome/free-regular-svg-icons/faTrash';
 import {faTrash as faTrashRegular} from '@fortawesome/free-solid-svg-icons/faTrash';
 faTrashRegular.prefix = 'far';
@@ -256,6 +259,7 @@ function boot() {
     faWindowCloseRegular,
     faToggleOffLight,
     faToggleOnLight,
+    faTombstoneSolid,
     faTrashRegular,
     faTrashSolid,
     faTrashAltSolid,
