@@ -1,20 +1,4 @@
-let proAvailable = true;
-try {
-  require('@fortawesome/fontawesome-pro');
-} catch (ex) {
-  if (ex.code === 'MODULE_NOT_FOUND') {
-    proAvailable = false;
-  } else {
-    throw ex;
-  }
-}
-
-let Fa;
-if (proAvailable) {
-  Fa = require('./fa-pro.js').default;
-} else {
-  Fa = require('./fa-free.js').default;
-}
+const Fa = require('goblin_theme_fa').default;
 
 import LatoRegularWoff from './fonts/lato-v14-latin-regular.woff';
 import LatoRegularWoff2 from './fonts/lato-v14-latin-regular.woff2';
