@@ -1,6 +1,7 @@
 import {library} from '@fortawesome/fontawesome-svg-core';
 
 /* A */
+import {faArrowsAlt as faArrowsAltSolid} from '@fortawesome/pro-solid-svg-icons/faArrowsAlt';
 import {faArrowsAltH as faArrowsAltHSolid} from '@fortawesome/free-solid-svg-icons/faArrowsAltH';
 faArrowsAltHSolid.iconName = 'arrows-h';
 /* B */
@@ -169,6 +170,7 @@ import {faWindowRestore as faWindowRestoreRegular} from '@fortawesome/free-regul
 
 function boot() {
   library.add(
+    faArrowsAltSolid,
     faArrowsAltHSolid,
 
     faBeerSolid,
