@@ -80,6 +80,9 @@ import {faMinusSquare as faMinusSquareRegular} from '@fortawesome/free-regular-s
 import {faMoon as faMoonSolid} from '@fortawesome/free-solid-svg-icons/faMoon';
 import {faMusic as faMusicSolid} from '@fortawesome/free-solid-svg-icons/faMusic';
 
+/* N */
+import {faNetworkWired as faNetworkWiredSolid} from '@fortawesome/pro-solid-svg-icons/faNetworkWired';
+
 /* O */
 
 /* P */
@@ -227,6 +230,8 @@ function boot() {
     faMinusSquareRegular,
     faMoonSolid,
     faMusicSolid,
+
+    faNetworkWiredSolid,
 
     faPaletteSolid,
     faPenSolid,
