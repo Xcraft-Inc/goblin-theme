@@ -103,6 +103,7 @@ import {faSearchPlus as faSearchPlusSolid} from '@fortawesome/pro-solid-svg-icon
 import {faSearchPlus as faSearchPlusLight} from '@fortawesome/pro-light-svg-icons/faSearchPlus';
 import {faShieldCheck as faShieldCheckSolid} from '@fortawesome/pro-solid-svg-icons/faShieldCheck';
 import {faShower as faShowerSolid} from '@fortawesome/pro-solid-svg-icons/faShower';
+import {faSignal as faSignalSolid} from '@fortawesome/pro-solid-svg-icons/faSignal';
 import {faSlidersH as faSlidersHSolid} from '@fortawesome/pro-solid-svg-icons/faSlidersH';
 import {faSpinner as faSpinnerSolid} from '@fortawesome/pro-solid-svg-icons/faSpinner';
 import {faSquare as faSquareLight} from '@fortawesome/pro-light-svg-icons/faSquare';
@@ -222,6 +223,7 @@ function boot() {
     faSearchPlusLight,
     faShieldCheckSolid,
     faShowerSolid,
+    faSignalSolid,
     faSlidersHSolid,
     faSpinnerSolid,
     faSquareLight,

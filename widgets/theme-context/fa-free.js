@@ -117,6 +117,7 @@ import {faShieldAlt as faShieldAltSolid} from '@fortawesome/free-solid-svg-icons
 faShieldAltSolid.iconName = 'shield-check';
 
 import {faShower as faShowerSolid} from '@fortawesome/free-solid-svg-icons/faShower';
+import {faSignal as faSignalSolid} from '@fortawesome/free-solid-svg-icons/faSignal';
 import {faSlidersH as faSlidersHSolid} from '@fortawesome/free-solid-svg-icons/faSlidersH';
 import {faSpinner as faSpinnerSolid} from '@fortawesome/free-solid-svg-icons/faSpinner';
 
@@ -251,6 +252,7 @@ function boot() {
     faSearchPlusLight,
     faShieldAltSolid,
     faShowerSolid,
+    faSignalSolid,
     faSlidersHSolid,
     faSpinnerSolid,
     faSquareLight,
