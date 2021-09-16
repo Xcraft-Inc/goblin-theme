@@ -14,13 +14,13 @@
     }
   },
   "dependencies": {
-    "xcraft-core-converters": "^3.0.0",
-    "xcraft-core-etc": "^2.0.4",
-    "xcraft-core-goblin": "^4.0.1"
+    "xcraft-core-converters": "^4.0.0",
+    "xcraft-core-etc": "^3.0.0",
+    "xcraft-core-goblin": "^5.0.0"
   },
   "devDependencies": {
     "prettier": "2.0.4",
-    "xcraft-core-shredder": "^4.0.0",
+    "xcraft-core-shredder": "^5.0.0",
     "xcraft-dev-fontawesome": "^0.1.0",
     "xcraft-dev-prettier": "^2.0.0",
     "xcraft-dev-rules": "^2.0.0"
