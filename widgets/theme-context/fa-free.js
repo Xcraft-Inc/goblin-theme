@@ -1,7 +1,7 @@
 import {library} from '@fortawesome/fontawesome-svg-core';
 
 /* A */
-import {faArrowsAlt as faArrowsAltSolid} from '@fortawesome/pro-solid-svg-icons/faArrowsAlt';
+import {faArrowsAlt as faArrowsAltSolid} from '@fortawesome/free-solid-svg-icons/faArrowsAlt';
 import {faArrowsAltH as faArrowsAltHSolid} from '@fortawesome/free-solid-svg-icons/faArrowsAltH';
 faArrowsAltHSolid.iconName = 'arrows-h';
 /* B */
@@ -81,7 +81,7 @@ import {faMoon as faMoonSolid} from '@fortawesome/free-solid-svg-icons/faMoon';
 import {faMusic as faMusicSolid} from '@fortawesome/free-solid-svg-icons/faMusic';
 
 /* N */
-import {faNetworkWired as faNetworkWiredSolid} from '@fortawesome/pro-solid-svg-icons/faNetworkWired';
+import {faNetworkWired as faNetworkWiredSolid} from '@fortawesome/free-solid-svg-icons/faNetworkWired';
 
 /* O */
 
