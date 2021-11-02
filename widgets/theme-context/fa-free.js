@@ -123,11 +123,12 @@ import {faSignal as faSignalSolid} from '@fortawesome/free-solid-svg-icons/faSig
 import {faSlidersH as faSlidersHSolid} from '@fortawesome/free-solid-svg-icons/faSlidersH';
 import {faSpinner as faSpinnerSolid} from '@fortawesome/free-solid-svg-icons/faSpinner';
 
+import {faSquare as faSquareRegular} from '@fortawesome/free-regular-svg-icons/faSquare';
 //import {faSquare as faSquareLight} from '@fortawesome/free-light-svg-icons/faSquare';
-import {faSquare as faSquareLight} from '@fortawesome/free-regular-svg-icons/faSquare';
+//warning: we need to clone before create a fake light version
+const faSquareLight = {...faSquareRegular};
 faSquareLight.prefix = 'fal';
 
-import {faSquare as faSquareRegular} from '@fortawesome/free-regular-svg-icons/faSquare';
 import {faSquare as faSquareSolid} from '@fortawesome/free-solid-svg-icons/faSquare';
 import {faStop as faStopSolid} from '@fortawesome/free-solid-svg-icons/faStop';
 import {faSun as faSunSolid} from '@fortawesome/free-solid-svg-icons/faSun';
