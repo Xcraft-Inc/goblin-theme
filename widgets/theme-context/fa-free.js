@@ -30,6 +30,8 @@ import {faChevronDown as faChevronDownSolid} from '@fortawesome/free-solid-svg-i
 import {faCircle as faCircleRegular} from '@fortawesome/free-regular-svg-icons/faCircle';
 import {faCircle as faCircleSolid} from '@fortawesome/free-solid-svg-icons/faCircle';
 import {faColumns as faColumnsSolid} from '@fortawesome/free-solid-svg-icons/faColumns';
+import {faCube as faCubeLight} from '@fortawesome/free-solid-svg-icons/faCube';
+faCubeLight.prefix = 'fal';
 import {faCrown as faCrownSolid} from '@fortawesome/free-solid-svg-icons/faCrown';
 
 /* D */
@@ -198,6 +200,7 @@ function boot() {
     faCircleRegular,
     faCircleSolid,
     faColumnsSolid,
+    faCubeLight,
     faCrownSolid,
 
     faDotCircleRegular,

@@ -29,6 +29,7 @@ import {faChevronDoubleDown as faChevronDoubleDownSolid} from '@fortawesome/pro-
 import {faCircle as faCircleRegular} from '@fortawesome/pro-regular-svg-icons/faCircle';
 import {faCircle as faCircleSolid} from '@fortawesome/pro-solid-svg-icons/faCircle';
 import {faColumns as faColumnsSolid} from '@fortawesome/pro-solid-svg-icons/faColumns';
+import {faCube as faCubeLight} from '@fortawesome/pro-light-svg-icons/faCube';
 import {faCrown as faCrownSolid} from '@fortawesome/pro-solid-svg-icons/faCrown';
 
 /* D */
@@ -166,6 +167,7 @@ function boot() {
     faCircleRegular,
     faCircleSolid,
     faColumnsSolid,
+    faCubeLight,
     faCrownSolid,
 
     faDotCircleRegular,
