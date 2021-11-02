@@ -7,6 +7,7 @@ import {faArrowsH as faArrowsHSolid} from '@fortawesome/pro-solid-svg-icons/faAr
 /* B */
 import {faBeer as faBeerSolid} from '@fortawesome/pro-solid-svg-icons/faBeer';
 import {faBinoculars as faBinocularsSolid} from '@fortawesome/pro-solid-svg-icons/faBinoculars';
+import {faBook as faBookSolid} from '@fortawesome/pro-solid-svg-icons/faBook';
 import {faBug as faBugSolid} from '@fortawesome/pro-solid-svg-icons/faBug';
 
 /* C */
@@ -48,6 +49,7 @@ import {faEyeDropper as faEyeDropperSolid} from '@fortawesome/pro-solid-svg-icon
 /* F */
 import {faFile as faFileRegular} from '@fortawesome/pro-regular-svg-icons/faFile';
 import {faFilePdf as faFilePfdSolid} from '@fortawesome/pro-solid-svg-icons/faFilePdf';
+import {faFlag as faFlagSolid} from '@fortawesome/pro-solid-svg-icons/faFlag';
 import {faFolder as faFolderSolid} from '@fortawesome/pro-solid-svg-icons/faFolder';
 import {faFolderOpen as faFolderOpenSolid} from '@fortawesome/pro-solid-svg-icons/faFolderOpen';
 
@@ -119,6 +121,8 @@ import {faTimes as faTimesSolid} from '@fortawesome/pro-solid-svg-icons/faTimes'
 import {faTimesCircle as faTimesCircleSolid} from '@fortawesome/pro-solid-svg-icons/faTimesCircle';
 import {faTimesSquare as faTimesSquareSolid} from '@fortawesome/pro-solid-svg-icons/faTimesSquare';
 import {faTimesSquare as faTimesSquareRegular} from '@fortawesome/pro-regular-svg-icons/faTimesSquare';
+import {faTint as faTintRegular} from '@fortawesome/pro-regular-svg-icons/faTint';
+import {faTint as faTintSolid} from '@fortawesome/pro-solid-svg-icons/faTint';
 import {faToggleOff as faToggleOffLight} from '@fortawesome/pro-light-svg-icons/faToggleOff';
 import {faToggleOn as faToggleOnLight} from '@fortawesome/pro-light-svg-icons/faToggleOn';
 import {faTombstone as faTombstoneSolid} from '@fortawesome/pro-solid-svg-icons/faTombstone';
@@ -126,10 +130,12 @@ import {faTrash as faTrashRegular} from '@fortawesome/pro-regular-svg-icons/faTr
 import {faTrash as faTrashSolid} from '@fortawesome/pro-solid-svg-icons/faTrash';
 import {faTrashAlt as faTrashAltSolid} from '@fortawesome/pro-solid-svg-icons/faTrashAlt';
 import {faTrashAlt as faTrashAltRegular} from '@fortawesome/pro-regular-svg-icons/faTrashAlt';
+import {faTv as faTvSolid} from '@fortawesome/pro-solid-svg-icons/faTv';
 
 /* U */
 import {faUndo as faUndoSolid} from '@fortawesome/pro-solid-svg-icons/faUndo';
 import {faUpload as faUploadSolid} from '@fortawesome/pro-solid-svg-icons/faUpload';
+import {faUsers as faUsersSolid} from '@fortawesome/pro-solid-svg-icons/faUsers';
 
 /* V */
 import {faVial as faVialSolid} from '@fortawesome/pro-solid-svg-icons/faVial';
@@ -145,6 +151,7 @@ function boot() {
     faArrowsHSolid,
 
     faBeerSolid,
+    faBookSolid,
     faBinocularsSolid,
     faBugSolid,
 
@@ -183,6 +190,7 @@ function boot() {
 
     faFileRegular,
     faFilePfdSolid,
+    faFlagSolid,
     faFolderSolid,
     faFolderOpenSolid,
 
@@ -239,6 +247,8 @@ function boot() {
     faTimesCircleSolid,
     faTimesSquareSolid,
     faTimesSquareRegular,
+    faTintSolid,
+    faTintRegular,
     faToggleOffLight,
     faToggleOnLight,
     faTombstoneSolid,
@@ -246,9 +256,11 @@ function boot() {
     faTrashSolid,
     faTrashAltSolid,
     faTrashAltRegular,
+    faTvSolid,
 
     faUndoSolid,
     faUploadSolid,
+    faUsersSolid,
 
     faVialSolid,
 
