@@ -81,6 +81,12 @@ faMinusCircleRegular.prefix = 'far';
 
 import {faMinusSquare as faMinusSquareSolid} from '@fortawesome/free-solid-svg-icons/faMinusSquare';
 import {faMinusSquare as faMinusSquareRegular} from '@fortawesome/free-regular-svg-icons/faMinusSquare';
+
+//import {faMonitorHeartRate as faMonitorHeartRateLight} from '@fortawesome/pro-light-svg-icons/faMonitorHeartRate';
+import {faSquare as faMonitorHeartRateLight} from '@fortawesome/free-light-svg-icons/faSquare';
+faMonitorHeartRateLight.prefix = 'fal';
+faMonitorHeartRateLight.iconName = 'monitor-heart-rate';
+
 import {faMoon as faMoonSolid} from '@fortawesome/free-solid-svg-icons/faMoon';
 import {faMusic as faMusicSolid} from '@fortawesome/free-solid-svg-icons/faMusic';
 
@@ -107,6 +113,7 @@ import {faPrint as faPrintSolid} from '@fortawesome/free-solid-svg-icons/faPrint
 import {faSatelliteDish as faSatelliteDishSolid} from '@fortawesome/free-solid-svg-icons/faSatelliteDish';
 faSatelliteDishSolid.prefix = 'fal';
 faSatelliteDishSolid.iconName = 'radar';
+
 /* S */
 import {faSearch as faSearchSolid} from '@fortawesome/free-solid-svg-icons/faSearch';
 import {faSearchMinus as faSearchMinusSolid} from '@fortawesome/free-solid-svg-icons/faSearchMinus';
@@ -240,6 +247,7 @@ function boot() {
     faMinusCircleRegular,
     faMinusSquareSolid,
     faMinusSquareRegular,
+    faMonitorHeartRateLight,
     faMoonSolid,
     faMusicSolid,
 
