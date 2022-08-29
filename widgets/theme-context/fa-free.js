@@ -4,8 +4,11 @@ import {library} from '@fortawesome/fontawesome-svg-core';
 import {faArrowsAlt as faArrowsAltSolid} from '@fortawesome/free-solid-svg-icons/faArrowsAlt';
 import {faArrowsAltH as faArrowsAltHSolid} from '@fortawesome/free-solid-svg-icons/faArrowsAltH';
 faArrowsAltHSolid.iconName = 'arrows-h';
+import {faArrowLeft as faArrowLeftSolid} from '@fortawesome/free-solid-svg-icons/faArrowLeft';
+import {faArrowRight as faArrowRightSolid} from '@fortawesome/free-solid-svg-icons/faArrowRight';
 /* B */
 import {faBeer as faBeerSolid} from '@fortawesome/free-solid-svg-icons/faBeer';
+import {faBell as faBellSolid} from '@fortawesome/free-solid-svg-icons/faBell';
 import {faBook as faBookSolid} from '@fortawesome/free-solid-svg-icons/faBook';
 import {faBinoculars as faBinocularsSolid} from '@fortawesome/free-solid-svg-icons/faBinoculars';
 import {faBug as faBugSolid} from '@fortawesome/free-solid-svg-icons/faBug';
@@ -30,7 +33,11 @@ import {faChevronDown as faChevronDownSolid} from '@fortawesome/free-solid-svg-i
 
 import {faCircle as faCircleRegular} from '@fortawesome/free-regular-svg-icons/faCircle';
 import {faCircle as faCircleSolid} from '@fortawesome/free-solid-svg-icons/faCircle';
+import {faClock as faClockSolid} from '@fortawesome/free-solid-svg-icons/faClock';
+import {faClock as faClockRegular} from '@fortawesome/free-regular-svg-icons/faClock';
 import {faColumns as faColumnsSolid} from '@fortawesome/free-solid-svg-icons/faColumns';
+import {faCompress as faCompressSolid} from '@fortawesome/free-solid-svg-icons/faCompress';
+import {faCopy as faCopySolid} from '@fortawesome/free-solid-svg-icons/faCopy';
 import {faCube as faCubeLight} from '@fortawesome/free-solid-svg-icons/faCube';
 faCubeLight.prefix = 'fal';
 import {faCrown as faCrownSolid} from '@fortawesome/free-solid-svg-icons/faCrown';
@@ -49,8 +56,10 @@ import {faEllipsisV as faEllipsisVSolid} from '@fortawesome/free-solid-svg-icons
 import {faEraser as faEraserSolid} from '@fortawesome/free-solid-svg-icons/faEraser';
 import {faExternalLinkAlt as faExternalLinkAltSolid} from '@fortawesome/free-solid-svg-icons/faExternalLinkAlt';
 faExternalLinkAltSolid.iconName = 'external-link';
+import {faExpand as faExpandSolid} from '@fortawesome/free-solid-svg-icons/faExpand';
 
 import {faEyeDropper as faEyeDropperSolid} from '@fortawesome/free-solid-svg-icons/faEyeDropper';
+import {faEyeSlash as faEyeSlashSolid} from '@fortawesome/free-solid-svg-icons/faEyeSlash';
 
 /* F */
 import {faFile as faFileRegular} from '@fortawesome/free-regular-svg-icons/faFile';
@@ -192,8 +201,11 @@ function boot() {
   library.add(
     faArrowsAltSolid,
     faArrowsAltHSolid,
+    faArrowLeftSolid,
+    faArrowRightSolid,
 
     faBeerSolid,
+    faBellSolid,
     faBookSolid,
     faBinocularsSolid,
     faBugSolid,
@@ -214,7 +226,11 @@ function boot() {
     faChevronDownSolid,
     faCircleRegular,
     faCircleSolid,
+    faClockSolid,
+    faClockRegular,
     faColumnsSolid,
+    faCopySolid,
+    faCompressSolid,
     faCubeLight,
     faCrownSolid,
 
@@ -228,6 +244,8 @@ function boot() {
     faEraserSolid,
     faExternalLinkAltSolid,
     faEyeDropperSolid,
+    faEyeSlashSolid,
+    faExpandSolid,
 
     faFileRegular,
     faFilePfdSolid,
