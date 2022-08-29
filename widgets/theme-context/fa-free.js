@@ -83,7 +83,8 @@ import {faMinusSquare as faMinusSquareSolid} from '@fortawesome/free-solid-svg-i
 import {faMinusSquare as faMinusSquareRegular} from '@fortawesome/free-regular-svg-icons/faMinusSquare';
 
 //import {faMonitorHeartRate as faMonitorHeartRateLight} from '@fortawesome/pro-light-svg-icons/faMonitorHeartRate';
-import {faSquare as faMonitorHeartRateLight} from '@fortawesome/free-light-svg-icons/faSquare';
+import {faWaveSquare as faWaveSquareSolid} from '@fortawesome/free-solid-svg-icons/faWaveSquare';
+const faMonitorHeartRateLight = {...faWaveSquareSolid};
 faMonitorHeartRateLight.prefix = 'fal';
 faMonitorHeartRateLight.iconName = 'monitor-heart-rate';
 
