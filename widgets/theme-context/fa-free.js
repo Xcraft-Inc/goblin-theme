@@ -1,12 +1,18 @@
 import {library} from '@fortawesome/fontawesome-svg-core';
 
 /* A */
+import {faAngleDoubleDown as faAngleDoubleDownSolid} from '@fortawesome/free-solid-svg-icons/faAngleDoubleDown';
+import {faAngleDoubleLeft as faAngleDoubleLeftSolid} from '@fortawesome/free-solid-svg-icons/faAngleDoubleLeft';
+import {faAngleDoubleRight as faAngleDoubleRightSolid} from '@fortawesome/free-solid-svg-icons/faAngleDoubleRight';
+import {faAngleDoubleUp as faAngleDoubleUpSolid} from '@fortawesome/free-solid-svg-icons/faAngleDoubleUp';
 import {faArrowsAlt as faArrowsAltSolid} from '@fortawesome/free-solid-svg-icons/faArrowsAlt';
 import {faArrowsAltH as faArrowsAltHSolid} from '@fortawesome/free-solid-svg-icons/faArrowsAltH';
 faArrowsAltHSolid.iconName = 'arrows-h';
 import {faArrowLeft as faArrowLeftSolid} from '@fortawesome/free-solid-svg-icons/faArrowLeft';
 import {faArrowRight as faArrowRightSolid} from '@fortawesome/free-solid-svg-icons/faArrowRight';
+
 /* B */
+import {faBan as faBanSolid} from '@fortawesome/free-solid-svg-icons/faBan';
 import {faBeer as faBeerSolid} from '@fortawesome/free-solid-svg-icons/faBeer';
 import {faBell as faBellSolid} from '@fortawesome/free-solid-svg-icons/faBell';
 import {faBook as faBookSolid} from '@fortawesome/free-solid-svg-icons/faBook';
@@ -26,11 +32,8 @@ import {faCheckSquare as faCheckSquareRegular} from '@fortawesome/free-regular-s
 import {faCheckSquare as faCheckSquareSolid} from '@fortawesome/free-solid-svg-icons/faCheckSquare';
 import {faChevronLeft as faChevronLeftSolid} from '@fortawesome/free-solid-svg-icons/faChevronLeft';
 import {faChevronRight as faChevronRightSolid} from '@fortawesome/free-solid-svg-icons/faChevronRight';
-
 import {faChevronUp as faChevronUpSolid} from '@fortawesome/free-solid-svg-icons/faChevronUp';
-
 import {faChevronDown as faChevronDownSolid} from '@fortawesome/free-solid-svg-icons/faChevronDown';
-
 import {faCircle as faCircleRegular} from '@fortawesome/free-regular-svg-icons/faCircle';
 import {faCircle as faCircleSolid} from '@fortawesome/free-solid-svg-icons/faCircle';
 import {faClock as faClockSolid} from '@fortawesome/free-solid-svg-icons/faClock';
@@ -57,7 +60,6 @@ import {faEraser as faEraserSolid} from '@fortawesome/free-solid-svg-icons/faEra
 import {faExternalLinkAlt as faExternalLinkAltSolid} from '@fortawesome/free-solid-svg-icons/faExternalLinkAlt';
 faExternalLinkAltSolid.iconName = 'external-link';
 import {faExpand as faExpandSolid} from '@fortawesome/free-solid-svg-icons/faExpand';
-
 import {faEyeDropper as faEyeDropperSolid} from '@fortawesome/free-solid-svg-icons/faEyeDropper';
 import {faEyeSlash as faEyeSlashSolid} from '@fortawesome/free-solid-svg-icons/faEyeSlash';
 
@@ -149,8 +151,11 @@ const faSquareLight = {...faSquareRegular};
 faSquareLight.prefix = 'fal';
 
 import {faSquare as faSquareSolid} from '@fortawesome/free-solid-svg-icons/faSquare';
+import {faStepBackward as faStepBackwardSolid} from '@fortawesome/free-solid-svg-icons/faStepBackward';
+import {faStepForward as faStepForwardSolid} from '@fortawesome/free-solid-svg-icons/faStepForward';
 import {faStop as faStopSolid} from '@fortawesome/free-solid-svg-icons/faStop';
 import {faSun as faSunSolid} from '@fortawesome/free-solid-svg-icons/faSun';
+import {faSync as faSyncSolid} from '@fortawesome/free-solid-svg-icons/faSync';
 
 /* T */
 //import {faTachometer as faTachometerSolid} from '@fortawesome/free-solid-svg-icons/faTachometer';
@@ -199,11 +204,16 @@ import {faWindowRestore as faWindowRestoreRegular} from '@fortawesome/free-regul
 
 function boot() {
   library.add(
+    faAngleDoubleDownSolid,
+    faAngleDoubleLeftSolid,
+    faAngleDoubleRightSolid,
+    faAngleDoubleUpSolid,
     faArrowsAltSolid,
     faArrowsAltHSolid,
     faArrowLeftSolid,
     faArrowRightSolid,
 
+    faBanSolid,
     faBeerSolid,
     faBellSolid,
     faBookSolid,
@@ -296,8 +306,11 @@ function boot() {
     faSquareLight,
     faSquareRegular,
     faSquareSolid,
+    faStepBackwardSolid,
+    faStepForwardSolid,
     faStopSolid,
     faSunSolid,
+    faSyncSolid,
 
     faTachometerAltSolid,
     faTimesSolid,
