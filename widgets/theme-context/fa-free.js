@@ -15,14 +15,17 @@ import {faArrowRight as faArrowRightSolid} from '@fortawesome/free-solid-svg-ico
 import {faBan as faBanSolid} from '@fortawesome/free-solid-svg-icons/faBan';
 import {faBeer as faBeerSolid} from '@fortawesome/free-solid-svg-icons/faBeer';
 import {faBell as faBellSolid} from '@fortawesome/free-solid-svg-icons/faBell';
+import {faBicycle as faBicycleSolid} from '@fortawesome/free-solid-svg-icons/faBicycle';
 import {faBook as faBookSolid} from '@fortawesome/free-solid-svg-icons/faBook';
 import {faBinoculars as faBinocularsSolid} from '@fortawesome/free-solid-svg-icons/faBinoculars';
 import {faBug as faBugSolid} from '@fortawesome/free-solid-svg-icons/faBug';
 
 /* C */
 import {faCalendar as faCalendarRegular} from '@fortawesome/free-regular-svg-icons/faCalendar';
+import {faCalendar as faCalendarSolid} from '@fortawesome/free-solid-svg-icons/faCalendar';
 import {faCalendarAlt as faCalendarAltRegular} from '@fortawesome/free-regular-svg-icons/faCalendarAlt';
 import {faCalendarTimes as faCalendarTimesRegular} from '@fortawesome/free-regular-svg-icons/faCalendarTimes';
+import {faCar as faCarSolid} from '@fortawesome/free-solid-svg-icons/faCar';
 import {faCaretDown as faCaretDownSolid} from '@fortawesome/free-solid-svg-icons/faCaretDown';
 import {faCaretUp as faCaretUpSolid} from '@fortawesome/free-solid-svg-icons/faCaretUp';
 import {faCartPlus as faCartPlusSolid} from '@fortawesome/free-solid-svg-icons/faCartPlus';
@@ -31,7 +34,11 @@ import {faCheckCircle as faCheckCircleSolid} from '@fortawesome/free-solid-svg-i
 import {faCheckSquare as faCheckSquareRegular} from '@fortawesome/free-regular-svg-icons/faCheckSquare';
 import {faCheckSquare as faCheckSquareSolid} from '@fortawesome/free-solid-svg-icons/faCheckSquare';
 import {faChevronLeft as faChevronLeftSolid} from '@fortawesome/free-solid-svg-icons/faChevronLeft';
+import {faChevronLeft as faChevronLeftRegular} from '@fortawesome/free-solid-svg-icons/faChevronLeft';
+faChevronLeftRegular.prefix = 'fas';
 import {faChevronRight as faChevronRightSolid} from '@fortawesome/free-solid-svg-icons/faChevronRight';
+import {faChevronRight as faChevronRightRegular} from '@fortawesome/free-solid-svg-icons/faChevronRight';
+faChevronRightRegular.prefix = 'fas';
 import {faChevronUp as faChevronUpSolid} from '@fortawesome/free-solid-svg-icons/faChevronUp';
 import {faChevronDown as faChevronDownSolid} from '@fortawesome/free-solid-svg-icons/faChevronDown';
 import {faCircle as faCircleRegular} from '@fortawesome/free-regular-svg-icons/faCircle';
@@ -71,6 +78,7 @@ import {faFolder as faFolderSolid} from '@fortawesome/free-solid-svg-icons/faFol
 import {faFolderOpen as faFolderOpenSolid} from '@fortawesome/free-solid-svg-icons/faFolderOpen';
 
 /* G */
+import {faGlobe as faGlobeSolid} from '@fortawesome/free-solid-svg-icons/faGlobe';
 
 /* H */
 import {faHome as faHomeSolid} from '@fortawesome/free-solid-svg-icons/faHome';
@@ -110,6 +118,7 @@ import {faNetworkWired as faNetworkWiredSolid} from '@fortawesome/free-solid-svg
 /* P */
 import {faPalette as faPaletteSolid} from '@fortawesome/free-solid-svg-icons/faPalette';
 import {faPen as faPenSolid} from '@fortawesome/free-solid-svg-icons/faPen';
+import {faPlane as faPlaneSolid} from '@fortawesome/free-solid-svg-icons/faPlane';
 import {faPlay as faPlaySolid} from '@fortawesome/free-solid-svg-icons/faPlay';
 import {faPlus as faPlusSolid} from '@fortawesome/free-solid-svg-icons/faPlus';
 import {faPlusCircle as faPlusCircleSolid} from '@fortawesome/free-solid-svg-icons/faPlusCircle';
@@ -125,6 +134,7 @@ import {faPrint as faPrintSolid} from '@fortawesome/free-solid-svg-icons/faPrint
 import {faSatelliteDish as faSatelliteDishSolid} from '@fortawesome/free-solid-svg-icons/faSatelliteDish';
 faSatelliteDishSolid.prefix = 'fal';
 faSatelliteDishSolid.iconName = 'radar';
+import {faRocket as faRocketSolid} from '@fortawesome/free-solid-svg-icons/faRocket';
 
 /* S */
 import {faSearch as faSearchSolid} from '@fortawesome/free-solid-svg-icons/faSearch';
@@ -155,6 +165,7 @@ import {faStepBackward as faStepBackwardSolid} from '@fortawesome/free-solid-svg
 import {faStepForward as faStepForwardSolid} from '@fortawesome/free-solid-svg-icons/faStepForward';
 import {faStop as faStopSolid} from '@fortawesome/free-solid-svg-icons/faStop';
 import {faSun as faSunSolid} from '@fortawesome/free-solid-svg-icons/faSun';
+import {faSun as faSunRegular} from '@fortawesome/free-regular-svg-icons/faSun';
 import {faSync as faSyncSolid} from '@fortawesome/free-solid-svg-icons/faSync';
 
 /* T */
@@ -171,22 +182,20 @@ faWindowCloseSolid.iconName = 'times-square';
 //import {faTimesSquare as faTimesSquareRegular} from '@fortawesome/free-regular-svg-icons/faTimesSquare';
 import {faWindowClose as faWindowCloseRegular} from '@fortawesome/free-regular-svg-icons/faWindowClose';
 faWindowCloseRegular.iconName = 'times-square';
-
 import {faToggleOff as faToggleOffLight} from '@fortawesome/free-solid-svg-icons/faToggleOff';
 faToggleOffLight.prefix = 'fal';
 import {faToggleOn as faToggleOnLight} from '@fortawesome/free-solid-svg-icons/faToggleOn';
 faToggleOnLight.prefix = 'fal';
-
+import {faTrain as faTrainSolid} from '@fortawesome/free-solid-svg-icons/faTrain';
 // import {faTombstone as faTombstoneSolid} from '@fortawesome/free-solid-svg-icons/faTombstone';
 import {faTrash as faTombstoneSolid} from '@fortawesome/free-solid-svg-icons/faTrash';
-
 //import {faTrash as faTrashRegular} from '@fortawesome/free-regular-svg-icons/faTrash';
 import {faTrash as faTrashRegular} from '@fortawesome/free-solid-svg-icons/faTrash';
 faTrashRegular.prefix = 'far';
-
 import {faTrash as faTrashSolid} from '@fortawesome/free-solid-svg-icons/faTrash';
 import {faTrashAlt as faTrashAltSolid} from '@fortawesome/free-solid-svg-icons/faTrashAlt';
 import {faTrashAlt as faTrashAltRegular} from '@fortawesome/free-regular-svg-icons/faTrashAlt';
+import {faTruck as faTruckSolid} from '@fortawesome/free-solid-svg-icons/faTruck';
 import {faTv as faTvSolid} from '@fortawesome/free-solid-svg-icons/faTv';
 
 /* U */
@@ -216,13 +225,16 @@ function boot() {
     faBanSolid,
     faBeerSolid,
     faBellSolid,
+    faBicycleSolid,
     faBookSolid,
     faBinocularsSolid,
     faBugSolid,
 
     faCalendarRegular,
+    faCalendarSolid,
     faCalendarAltRegular,
     faCalendarTimesRegular,
+    faCarSolid,
     faCaretDownSolid,
     faCaretUpSolid,
     faCartPlusSolid,
@@ -231,7 +243,9 @@ function boot() {
     faCheckSquareRegular,
     faCheckSquareSolid,
     faChevronLeftSolid,
+    faChevronLeftRegular,
     faChevronRightSolid,
+    faChevronRightRegular,
     faChevronUpSolid,
     faChevronDownSolid,
     faCircleRegular,
@@ -263,6 +277,8 @@ function boot() {
     faFolderSolid,
     faFolderOpenSolid,
 
+    faGlobeSolid,
+
     faHomeSolid,
 
     faIndustrySolid,
@@ -284,6 +300,7 @@ function boot() {
 
     faPaletteSolid,
     faPenSolid,
+    faPlaneSolid,
     faPlaySolid,
     faPlusSolid,
     faPlusCircleSolid,
@@ -291,6 +308,8 @@ function boot() {
     faPlusSquareSolid,
     faPlusSquareRegular,
     faPrintSolid,
+
+    faRocketSolid,
 
     faSatelliteDishSolid,
 
@@ -310,6 +329,7 @@ function boot() {
     faStepForwardSolid,
     faStopSolid,
     faSunSolid,
+    faSunRegular,
     faSyncSolid,
 
     faTachometerAltSolid,
@@ -321,10 +341,12 @@ function boot() {
     faToggleOffLight,
     faToggleOnLight,
     faTombstoneSolid,
+    faTrainSolid,
     faTrashRegular,
     faTrashSolid,
     faTrashAltSolid,
     faTrashAltRegular,
+    faTruckSolid,
     faTvSolid,
 
     faUndoSolid,
